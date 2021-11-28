@@ -1,0 +1,1132 @@
+:root {
+    --bg-color: #000;
+    --white: #ffffff;
+    --primary: #00BDF0;
+    --secondary: #001c2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-color);
+}
+
+.header {
+    background-color: var(--secondary);
+}
+
+.navbar-nav .nav-item a {
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #f2f0eb !important;
+    line-height: 44px;
+}
+
+.btn-border {
+    border-radius: 11px;
+    background: transparent;
+    border: 5px solid #00c7fb;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary);
+    text-transform: uppercase;
+    padding: 0.2rem 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.btn-border:hover {
+    color: #fff;
+}
+
+.btn-border svg {
+    width: 33px;
+    margin-right: 6px;
+}
+
+.btn-filled {
+    border-radius: 11px;
+    background: var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #010e43;
+    padding: 1rem 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.banner {
+    background: var(--bg-color);
+}
+
+.banner-image-logo img {
+    width: 100%;
+}
+
+.btn-view {
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #00c7fb, #1f44dd, #00c7fb);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40.61px;
+    text-align: center;
+    color: #fff;
+    font-family: Lora;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0.7rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+}
+
+.btn-view:hover {
+    color: #fff;
+    box-shadow: 2px 1000px 1px #000 inset;
+}
+
+.btn-view span svg {
+    width: 20px;
+}
+
+.btn-arro-svg {
+    border: 2px solid var(--primary);
+    border-radius: 14px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 0px;
+    padding: 19px 22px;
+    margin-right: -19px;
+}
+
+.spacer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.btn-text {
+    padding: 0 0.5rem;
+}
+
+.second-btn-svg {
+    margin-left: -19px;
+    padding-right: 13px;
+    margin-right: 10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 14px;
+}
+
+.banner {
+    position: relative;
+}
+
+.bg-img-1 img {
+    position: absolute;
+    bottom: 43px;
+    width: 28%;
+}
+
+.pools-section {
+    flex-wrap: wrap;
+}
+
+.pools-section>div:nth-child(2) {
+    border-radius: 0;
+}
+
+.bg-line-img {
+    background: var(--bg-color);
+    margin-top: 2.6rem;
+}
+
+.bg-line-img img {
+    width: 100%;
+}
+
+.bg-img-2 img {
+    position: absolute;
+    right: 0;
+    bottom: 9rem;
+    width: 20%;
+}
+
+.bg-img-3 img {
+    bottom: -5rem;
+}
+
+.live-pool-prog {
+    padding: 1rem 1.5rem;
+    margin-left: -19px;
+    margin-right: 9px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(3, 116, 242, 1) 19%, rgba(0, 198, 250, 1) 51%);
+}
+
+.btn-view>div {
+    display: inline-block;
+}
+
+.pools-live .btn-view {
+    padding: 0.3rem 1rem;
+}
+
+.pools-live {
+    position: relative;
+}
+
+.bg-eclip-1 img {
+    top: -4rem;
+    left: -4rem;
+    width: 34%;
+    position: absolute;
+}
+
+.pools-section-1 {
+    border-radius: 5px 65px;
+    background: transparent;
+    border: 3px solid #00c6fa;
+    width: 31%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.pools-section {
+    margin-top: 7rem;
+    /* padding-bottom: 3rem; */
+}
+
+.pools-sec-logo svg {
+    margin-bottom: -3rem;
+    width: 40%;
+    margin-top: -5.5rem;
+}
+
+.pool-name {
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    line-height: 46px;
+}
+
+.in-days {
+    color: #fff;
+    border: solid 1.5px var(--primary);
+    border-radius: 20px;
+    background-color: #00c6fa26;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding: 6px 12px;
+    color: #fff;
+}
+
+.in-days svg {
+    margin-right: 3px;
+}
+
+.in-days:hover {
+    color: #fff;
+}
+
+.pool-section-head {
+    padding: 4px 23px 6px 23px;
+    border-bottom: 2px solid #00c6fa;
+}
+
+.pool-sec-body {
+    padding: 0.8rem 0.6rem 3rem 0.6rem;
+}
+
+.text {
+    font-family: Lora;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 20.61px;
+    text-align: left;
+    color: #fff;
+}
+
+.pool-sociel-icons {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pool-sociel-icons>div {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.pool-sociel-icons>div:first-child {
+    margin-left: 0;
+}
+
+.total-raise {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.primary-color {
+    color: var(--primary);
+}
+
+.progress-title {
+    padding-bottom: 4px;
+    padding-top: 0.8rem;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #fff;
+}
+
+.progress-rank p {
+    font-weight: normal;
+    margin-top: 3px;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #bfbfbf;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 15px;
+    background: #00556b;
+}
+
+.progress-bar {
+    border-radius: 15px;
+    background: #00c6fa;
+    border: 1px solid #00c6fa;
+}
+
+.progress-percentage {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    color: #00c6fa;
+    padding-bottom: 2px;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.bg-eclip-2 img {
+    position: absolute;
+    right: 17rem;
+    width: 28%;
+    bottom: -8rem;
+}
+
+.pools-section-detail {
+    border-radius: 18px;
+    background: transparent;
+    border: 3px solid #00c6fa;
+}
+
+.pool-name-detail {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+}
+
+.pool-detail-logo {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.ariadane .text {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    line-height: 33.61px;
+    text-align: left;
+    color: #fff;
+}
+
+.ariadane .total-raise {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.normal {
+    font-weight: normal !important;
+}
+
+.access-table {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.detail-table {
+    display: flex;
+}
+
+.detail-table>div {
+    padding: 1rem 1.8rem 1rem 1rem;
+    border: 1px solid #00c6fa;
+}
+
+.ariadane .pool-section-head {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.ariadane .pool-sec-body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.ariadane .progress {
+    height: 22px;
+    border-radius: 15px;
+}
+
+.carosel-eclip img {
+    top: 7rem;
+    right: 4rem;
+    left: inherit;
+}
+
+.dot-1 svg {
+    width: 6px;
+    position: absolute;
+    top: 1.7rem;
+    right: 27rem;
+}
+
+.dot-2 svg {
+    position: absolute;
+    width: 6px;
+    top: 17.5rem;
+    left: 28rem;
+}
+
+.dot-3 svg {
+    position: absolute;
+    width: 6px;
+    bottom: 23.5rem;
+    right: 11rem;
+}
+
+.dot-4 svg {
+    position: absolute;
+    bottom: 13rem;
+    width: 6px;
+    right: 3.5rem;
+}
+
+.got-to-pool {
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 2px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #00c7fb, #1f44dd);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    font-family: Lora;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #fff;
+    padding: 0.5rem 4rem;
+}
+
+.pool-sec-footer {
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    border-top: 2px solid #00caff
+}
+
+.got-to-pool:hover {
+    color: #fff;
+}
+
+.close-pool-detail {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    display: block !important;
+    opacity: 1!important;
+    width: 40px;
+    height: 34px;
+    background: #00c6fa2e;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/left.png');
+    z-index: 1 !important;
+    width: 10px;
+    width: 14px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../images/Icon\ ionic-ios-arrow-back.png');
+    width: 10px;
+    width: 14px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.carousel-control-prev {
+    left: 57rem;
+}
+
+.carousel-control-next {
+    right: 6rem;
+}
+
+.arro-up svg {
+    width: 47px;
+    position: absolute;
+    right: 1.7%;
+    bottom: 4rem;
+}
+
+.intro-heading {
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.07em;
+    line-height: 74.61px;
+    text-align: left;
+    color: #fff;
+}
+
+.intro-video-bg svg {
+    opacity: 0.4;
+    width: 18rem;
+    position: absolute;
+    right: 5px;
+    z-index: -1;
+    top: 4rem;
+}
+
+.intro-video {
+    position: relative;
+}
+
+.intro-video-bg-1 svg {
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.intro-video-bg-2 svg {
+    position: absolute;
+    bottom: -11.5rem;
+    z-index: -1;
+    width: 16rem;
+    left: 5%;
+}
+
+.intro-video-bg-3 svg {
+    position: absolute;
+    right: 7rem;
+    bottom: -9rem;
+    width: 9rem;
+    opacity: 0.4;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.portfolio-icons {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.portfolio-icons>div {
+    width: 18%;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+}
+
+.portfolio-icons>div:nth-child(2n) {
+    margin-top: 2.4rem;
+}
+
+.portfolio-icons>div img {
+    width: 100%;
+}
+
+.portb-banner-1 img {
+    position: absolute;
+    width: 38%;
+    bottom: 0;
+    left: 0;
+}
+
+.portb-banner-2 img {
+    position: absolute;
+    width: 38%;
+    bottom: 0;
+    right: 0;
+}
+
+.support-chain {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.black-heading {
+    font-family: Lora;
+    font-weight: normal;
+    font-size: 39px;
+    letter-spacing: 0.07em;
+    line-height: 74.61px;
+    text-align: left;
+    color: #011321;
+}
+
+.chain-img img {
+    width: 100%;
+}
+
+.chain-1 svg {
+    position: absolute;
+    width: 12rem;
+    top: -107px;
+    left: -5%;
+}
+
+.chain-2 svg {
+    position: absolute;
+    right: -8%;
+    width: 13rem;
+    top: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.partner-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partner-row {
+    display: flex;
+    justify-content: end;
+    margin-top: -81px;
+}
+
+.partner-row>div {
+    margin-left: -2.2rem;
+    width: 20.6%;
+    margin-right: -2.2rem;
+}
+
+.partner-row>div:last-child {
+    margin-right: 0;
+}
+
+.partner-icons>div:first-child {
+    margin-left: 0;
+}
+
+.partner-row>div img {
+    width: 100%;
+}
+
+.partner-icons>div {
+    margin-left: -2.2rem;
+    width: 20.8%;
+    margin-right: -2.2rem;
+}
+
+.partner-icons>div img {
+    width: 100%;
+}
+
+.partners {
+    position: relative;
+}
+
+.part-banner-1 img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+.part-banner-2 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12%;
+}
+
+.faq-img img {
+    width: 100%;
+}
+
+.faq .card {
+    margin-bottom: 0.7rem;
+    border-radius: 26px;
+    background: linear-gradient(90deg, rgba(1, 19, 33, 1) 19%, rgba(1, 14, 67, 1) 62%);
+}
+
+.faq .card .card-header {
+    padding: 0rem 0.7rem;
+}
+
+.faq .card .card-body {
+    font-family: Lora;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0px 1rem 1rem 1.5rem;
+    letter-spacing: 0.1em;
+    line-height: 27.61px;
+    text-align: left;
+    color: #fff;
+    margin-top: -7px;
+}
+
+.faq .card .card-header h5 button {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.faq .card .card-header h5 button svg {
+    width: 25px;
+}
+
+.faq .card .card-header h5 button .svg-wrong svg {
+    width: 20px !important;
+}
+
+.btn-link .svg-right {
+    display: none;
+}
+
+.btn-link .svg-wrong {
+    display: block;
+}
+
+.collapsed .svg-right {
+    display: block;
+}
+
+.collapsed .svg-wrong {
+    display: none;
+}
+
+.faq .card .card-header h5 button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.faq-eclip img {
+    position: absolute;
+    width: 30px;
+    bottom: 5rem;
+    left: 6rem;
+}
+
+.faq {
+    padding-bottom: 10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.subscribe {
+    position: relative;
+    background-color: #011321;
+}
+
+.pool-subscribe {
+    clip-path: polygon(0 26%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 5rem;
+}
+
+.subcribe-path img {
+    width: 100%;
+    position: absolute;
+    top: -6rem;
+}
+
+.bg-diffrent {
+    background-color: #011321;
+}
+
+.footer {
+    background-color: #011321;
+}
+
+.get-more {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+}
+
+.subscribe-text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 0.02em;
+    line-height: 55px;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.subs-email img {
+    width: 100%;
+}
+
+.subscribe-input {
+    position: relative;
+}
+
+.subscribe-input .form-control {
+    border-radius: 48px;
+    background: #fff;
+    border: 1px solid #707070;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    text-transform: capitalize;
+    color: #000;
+    padding: 2rem 1.6rem;
+}
+
+.subscribe-input .form-control::placeholder {
+    color: #000000cc;
+}
+
+.input-subs-badge {
+    background: #011321;
+    opacity: 0.91;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    padding: 0.3rem 2rem;
+    border-radius: 32px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+}
+
+.input-subs-badge svg {
+    margin-right: -10px;
+    margin-bottom: 6px;
+}
+
+.subs-eclip img {
+    position: absolute;
+    right: 4rem;
+    top: -1rem;
+    width: 33px;
+}
+
+.footer {
+    position: relative;
+    border-top: 1px solid #707070;
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-logo {
+    width: 70%;
+}
+
+.footer-heading {
+    font-family: Roboto-Light;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.footer-heading::before {
+    width: 88px;
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    background: var(--primary);
+}
+
+.footer-link-icon {
+    display: flex;
+}
+
+.footer-link-icon>div {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.footer-link-icon>div svg {
+    width: 36px;
+}
+
+.footer-link-icon>div:first-child {
+    margin-left: 0;
+}
+
+.about-us-footer-heading {
+    position: relative;
+}
+
+.about-us-link::before {
+    position: absolute;
+    content: 'About Us ';
+    font-weight: normal;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #00c7fb;
+    transform: rotate( 269deg);
+    left: -3rem;
+    top: 4rem;
+}
+
+.about-us-link>ul li {
+    list-style: none;
+}
+
+.about-us-link {
+    padding-left: 3rem;
+}
+
+.about-us-link ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.footer-sociel-icon {
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-sociel-contact {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.footer-side-poly img {
+    position: absolute;
+    width: 110px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-side-poly-2 img {
+    position: absolute;
+    width: 39px;
+    top: 0;
+    bottom: 0;
+    transform: translateY(16%);
+    right: 0;
+}
+
+.footer-bg-1 img {
+    position: absolute;
+    left: 21rem;
+    width: 27px;
+    top: 14px;
+}
+
+.footer-bg-2 img {
+    position: absolute;
+    left: 36rem;
+    width: 27px;
+    bottom: 14px;
+}
+
+.footer-dot img {
+    position: absolute;
+    right: 0;
+    top: -52px;
+    width: 10%;
+}
+
+
+/* all pool page design */
+
+.pool-page .pools-section-1 {
+    margin-bottom: 5rem;
+}
+
+.pool-heading {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    line-height: 40.61px;
+    text-align: center;
+    color: #fff;
+}
+
+.search-input {
+    border-radius: 12px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #00c6fa;
+    font-weight: 500;
+    font-size: 24px;
+    color: #616161;
+    padding: 1rem 1rem 1rem 4rem;
+    text-transform: capitalize;
+}
+
+.search-input-icon svg {
+    left: 20px;
+    position: absolute;
+    top: 14px;
+    width: 35px;
+}
+
+.search-section {
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.pool-bg-1 img {
+    top: 12rem;
+    left: 20rem;
+    width: 17%;
+    position: absolute;
+}
+
+.pool-subs img {
+    top: inherit;
+    bottom: -111px;
+}
+
+.all-pool-texture-bg {
+    background-image: url('../images/all-pool-texure-bg.png');
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pool-filter-menu .btn-secondary {
+    background: transparent;
+    border: none;
+}
+
+.pool-filter-menu .btn-secondary::before {
+    border-top: 0em solid transparent;
+    border-right: 0em solid;
+}
+
+.pool-filter-menu .dropdown-menu {
+    border-radius: 18px;
+    background: #011321;
+    border: 1px solid #707070;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+}
+
+.pool-filter-menu .dropdown-menu .dropdown-item {
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    line-height: 40.61px;
+    color: #f2f0eb;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+.pool-filter-menu .dropdown-menu .dropdown-item:focus,
+.dropdown-item:hover {
+    background: var(--primary);
+    color: var(--bg-color) !important;
+}
+
+.pool-filter-menu .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+    background: transparent;
+    border-color: transparent;
+}

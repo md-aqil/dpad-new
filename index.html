@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--header  -->
+
+    <section class="header">
+        <div class="container">
+            <div class="navigation">
+                <nav class="navbar navbar-expand-lg  ">
+                    <a class="navbar-brand" href="#"><img style="width: 65%;" src="./images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <img style="width: 80%;" src="./images/switch.png" alt="">
+                            </li>
+
+                        </ul>
+                        <div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">All Pools <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Voting</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Stats</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Staking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-border">
+                                    <span><svg id="Group_1422" data-name="Group 1422" xmlns="http://www.w3.org/2000/svg" width="35.676" height="41.268" viewBox="0 0 35.676 41.268">
+                                        <path id="Path_4682" data-name="Path 4682" d="M86,104.03v20.6l13.726,7.925v-1.624l-12.32-7.113V104.842l15.967-9.218V94Z" transform="translate(-86 -94)" fill="#00c7fb"/>
+                                        <path id="Path_4683" data-name="Path 4683" d="M144.285,135.76l-13.3-7.679-13.705,7.913v11.715h1.406v-10.9l12.3-7.1,10.487,6.055Z" transform="translate(-113.146 -123.578)" fill="#00c7fb"/>
+                                        <path id="Path_4684" data-name="Path 4684" d="M146.167,220.105v10.767l-12.3,7.1-10.454-6.035H120.6l13.266,7.659,13.705-7.913V220.105Z" transform="translate(-116.029 -203.442)" fill="#00c7fb"/>
+                                        <path id="Path_4685" data-name="Path 4685" d="M155.136,159.6l-8.111-4.716v-11.29l9.071-5.121v-4.245H157.5v5.066l-9.071,5.121v9.66l5.3,3.081,0-9.355h1.406Z" transform="translate(-138.961 -128.912)" fill="#00c7fb"/>
+                                        <path id="Path_4686" data-name="Path 4686" d="M221.2,108.243v1.624l12.707,7.337v18.974l-15.534,9v-8.139l8.877-4.682V121.058l-8.14-5.163v12.658h1.406V118.4l5.328,3.45V131.5l-8.877,4.683v9.523l-.028,1.919,18.375-10.64v-20.6Z" transform="translate(-199.636 -106.361)" fill="#00c7fb"/>
+                                      </svg>
+                                      </span>
+                                      <span>
+                                        Buy Dpad
+                                      </span>
+                                </button>
+
+
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-filled dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Connect Wallet
+                                    </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="61.462" viewBox="0 0 51.058 61.462">
+                                    <g id="menu" transform="translate(0.5 0.673)">
+                                      <path id="Icon_awesome-hamburger" data-name="Icon awesome-hamburger" d="M44.553,23.758H4.609a4.609,4.609,0,0,0,0,9.218H44.553a4.609,4.609,0,0,0,0-9.218ZM46.09,36.049H3.073a1.536,1.536,0,0,0-1.536,1.536v1.536a6.145,6.145,0,0,0,6.145,6.145h33.8a6.145,6.145,0,0,0,6.145-6.145V37.585A1.536,1.536,0,0,0,46.09,36.049Z" transform="translate(0 15.022)" fill="#00c6fa" stroke="#1f44dd" stroke-width="1"/>
+                                      <path id="Icon_awesome-hamburger-2" data-name="Icon awesome-hamburger" d="M5.631,20.686h37.9c3.319,0,5.245-4.215,3.343-7.286C43.017,7.166,34.524,2.26,24.581,2.25,14.639,2.26,6.145,7.166,2.287,13.4.384,16.47,2.311,20.686,5.631,20.686ZM36.872,9.932a1.536,1.536,0,1,1-1.536,1.536A1.536,1.536,0,0,1,36.872,9.932ZM24.581,6.859A1.536,1.536,0,1,1,23.045,8.4,1.536,1.536,0,0,1,24.581,6.859ZM12.291,9.932a1.536,1.536,0,1,1-1.536,1.536A1.536,1.536,0,0,1,12.291,9.932Z" transform="matrix(0.921, 0.391, -0.391, 0.921, 6.9, -2.671)" fill="#00c6fa" stroke="#1f44dd" stroke-width="1"/>
+                                    </g>
+                                  </svg>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="banner pb-4">
+        <div class="bg-img-1">
+            <img src="./images/bg-img-1.png" alt="">
+        </div>
+
+        <div class="bg-img-2">
+            <img src="./images/bg-img-2.png" alt="">
+        </div>
+        <div class="bg-img-2 bg-img-3">
+            <img src="./images/bg-img-3.png" alt="">
+        </div>
+        <div class="container">
+            <div class="banner-image-logo">
+                <img src="./images/banner-logo.png" alt="">
+            </div>
+
+            <div class="banner-btn text-center">
+                <button class="btn btn-view">
+                    <span class="btn-text">
+                        VIEW POOL
+
+                    </span>
+                    <span class="btn-arro-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32.504" height="31.705" viewBox="0 0 32.504 31.705">
+                            <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M13.395,4.7l1.561-1.561a1.681,1.681,0,0,1,2.384,0L31.008,16.8a1.681,1.681,0,0,1,0,2.384L17.339,32.857a1.681,1.681,0,0,1-2.384,0L13.395,31.3a1.689,1.689,0,0,1,.028-2.412L21.9,20.813H1.688A1.683,1.683,0,0,1,0,19.125v-2.25a1.683,1.683,0,0,1,1.688-1.687H21.9L13.423,7.116A1.677,1.677,0,0,1,13.395,4.7Z" transform="translate(0.5 -2.147)" fill="#00acd9" stroke="#00acd9" stroke-width="1"/>
+                          </svg>
+                          
+                    </span>
+                </button>
+                <button class="btn btn-view">
+                        <span class="btn-arro-svg second-btn-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32.503" height="31.705" viewBox="0 0 32.503 31.705">
+                                <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M18.109,4.7,16.548,3.143a1.681,1.681,0,0,0-2.384,0L.5,16.8a1.681,1.681,0,0,0,0,2.384L14.164,32.857a1.681,1.681,0,0,0,2.384,0L18.109,31.3a1.689,1.689,0,0,0-.028-2.412L9.608,20.813H29.816A1.683,1.683,0,0,0,31.5,19.125v-2.25a1.683,1.683,0,0,0-1.687-1.687H9.608l8.473-8.072A1.677,1.677,0,0,0,18.109,4.7Z" transform="translate(0.5 -2.147)" fill="#00acd9" stroke="#00acd9" stroke-width="1"/>
+                              </svg>
+                              
+                              
+                        </span>
+                        <span class="btn-text">
+                            Create Pool
+    
+                        </span>
+                       
+                </button>
+            </div>
+        </div>
+        <div class="bg-line-img">
+            <img src="./images/bg-line.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="pools-live">
+        <div class="bg-eclip-2">
+            <img src="./images/eclip-2.png" alt="">
+        </div>
+        <div class=" bg-eclip-1 ">
+            <img src="./images/bg-round-1.png " alt=" ">
+        </div>
+        <div class="container ">
+            <div class=" text-center ">
+                <button class="btn btn-view ">
+                    <span class="live-pool-prog ">
+                    </span>
+                    <span class="btn-text ">
+                        VIEW POOL
+    
+                    </span>
+                    
+                </button>
+
+                <button class="btn btn-view ">
+                    <span class="live-pool-prog ">
+                    </span>
+                    <span class="btn-text ">
+                        Upcoming Pools 
+    
+                    </span>
+                    
+                </button>
+
+                <button class="btn btn-view ">
+                    <span class="live-pool-prog ">
+                    </span>
+                    <span class="btn-text ">
+                        ENDED Pools 
+    
+                    </span>
+                    
+                </button>
+            </div>
+
+            <div class="pools-section d-flex justify-content-between ">
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">100%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 100%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">50%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 50%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">100%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 100%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="ariadane ">
+        <div class="container">
+            <div id="carouselExampleControls " class="carousel slide " data-ride="carousel ">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <div class="close-pool-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35.159" height="35.159" viewBox="0 0 52.159 52.159">
+                                <path id="Icon_metro-cancel" data-name="Icon metro-cancel" d="M28.65,1.928A26.079,26.079,0,1,0,54.729,28.007,26.079,26.079,0,0,0,28.65,1.928Zm0,47.269a21.19,21.19,0,1,1,21.19-21.19A21.19,21.19,0,0,1,28.65,49.2ZM36.8,14.968l-8.15,8.15-8.15-8.15-4.89,4.89,8.15,8.15-8.15,8.15,4.89,4.89,8.15-8.15,8.15,8.15,4.89-4.89-8.15-8.15,8.15-8.15Z" transform="translate(-2.571 -1.928)" fill="#00c6fa"/>
+                              </svg>
+
+                        </div>
+                        <div class="pools-section-detail position-relative">
+
+                            <div class="pool-section-head ">
+
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex justify-content-between ">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="100.632 " height="100.912 " viewBox="0 0 161.632 167.912 ">
+                                                <defs>
+                                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                                    <stop offset="1 " stop-color="#024253 "/>
+                                                  </linearGradient>
+                                                </defs>
+                                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                                  </g>
+                                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                                1550.202) " fill="#041d35 "/>
+                                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                                </g>
+                                              </svg>
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ">Ariadne</h3>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <button class="btn in-days ">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                                <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                              </svg>
+                                              </span>
+                                            <span>in 1 days </span>
+                                        </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="align-self-center">
+                                        <div class="pool-sociel-icons ">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.495" height="26.419" viewBox="0 0 30.495 30.419">
+                                                    <path id="Path_6141" data-name="Path 6141" d="M28.075-485.821a13.722,13.722,0,0,0-5.289,1.784,16.065,16.065,0,0,0-4.283,3.569,15.943,15.943,0,0,0-3.043,5.937A20.35,20.35,0,0,0,15-470.767a19.629,19.629,0,0,0,.649,4.555,15.9,15.9,0,0,0,4.315,6.736,9.222,9.222,0,0,0,1.661,1.317,14.045,14.045,0,0,0,8.137,2.622,14.353,14.353,0,0,0,9.117-2.589,15.631,15.631,0,0,0,5.957-7.9,20.713,20.713,0,0,0,.59-3.017,19.81,19.81,0,0,0-.026-3.562,13.3,13.3,0,0,0-1.6-5.2,15.193,15.193,0,0,0-6.807-6.632,13.754,13.754,0,0,0-4.763-1.415A19.715,19.715,0,0,0,28.075-485.821Zm2.888,4c0,.065-.175,1.155-.4,2.42-.6,3.556-.707,4.179-.707,4.231,0,.1.182.045.941-.311S34.208-477,34.253-477s-.006.311-.24,1.168c-.383,1.369-.266,1.22-1.285,1.674-1.557.688-3.219,1.441-3.245,1.473a30.611,30.611,0,0,0-.629,3.991c-.058.409-.175,1.207-.266,1.772a9.511,9.511,0,0,0-.143,1.129c.019.1.428.11,5.276.117,3.679.013,5.256.032,5.276.084a9.206,9.206,0,0,1-.279,1.1c-.169.565-.4,1.337-.5,1.72l-.195.7H23.7v-.143c0-.136.273-1.8.98-5.95.214-1.259.383-2.362.37-2.44-.019-.149-.039-.143-.863.24-1.5.688-2.005.908-2.511,1.09-.435.156-.506.162-.506.071.006-.058.143-.6.311-1.207l.3-1.1.292-.143c.162-.078.454-.208.649-.279a16.706,16.706,0,0,0,2.8-1.33c.065-.156.545-3.05.642-3.887.065-.506.649-4.114.753-4.6l.039-.175h2.005C30.827-481.928,30.963-481.921,30.963-481.818Z" transform="translate(-15 485.948)" fill="#00c6fa"/>
+                                                  </svg>
+
+
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg " width="24.687 " height="22.177 " viewBox="0 0 18.687 15.177 ">
+                                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                                  </svg>
+
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg " width="24.687 " height="22.177 " viewBox="0 0 16.349 13.711 ">
+                                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                                  </svg>
+
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg " width="24.687 " height="22.177 " viewBox="0 0 17.654 14.008 ">
+                                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                                  </svg>
+
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg " width="25.687 " height="22.177 " viewBox="0 0 18.099 18.103 ">
+                                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                                  </svg>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pool-sec-body ">
+                                <div class=" bg-eclip-1 carosel-eclip ">
+                                    <img src="./images/bg-round-1.png " alt=" ">
+                                </div>
+                                <div class="dot-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                        <g id="Group_1087" data-name="Group 1087" transform="translate(-185 -2747)">
+                                          <circle id="Ellipse_1870" data-name="Ellipse 1870" cx="3" cy="3" r="3" transform="translate(187 2749)" fill="#00c6fa"/>
+                                          <g id="Ellipse_1873" data-name="Ellipse 1873" transform="translate(185 2747)" fill="none" stroke="#00c6fa" stroke-width="1">
+                                            <circle cx="5" cy="5" r="5" stroke="none"/>
+                                            <circle cx="5" cy="5" r="4.5" fill="none"/>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+                                </div>
+
+                                <div class="dot-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                        <g id="Group_1087" data-name="Group 1087" transform="translate(-185 -2747)">
+                                          <circle id="Ellipse_1870" data-name="Ellipse 1870" cx="3" cy="3" r="3" transform="translate(187 2749)" fill="#00c6fa"/>
+                                          <g id="Ellipse_1873" data-name="Ellipse 1873" transform="translate(185 2747)" fill="none" stroke="#00c6fa" stroke-width="1">
+                                            <circle cx="5" cy="5" r="5" stroke="none"/>
+                                            <circle cx="5" cy="5" r="4.5" fill="none"/>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+                                </div>
+
+                                <div class="dot-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                        <g id="Group_1087" data-name="Group 1087" transform="translate(-185 -2747)">
+                                          <circle id="Ellipse_1870" data-name="Ellipse 1870" cx="3" cy="3" r="3" transform="translate(187 2749)" fill="#00c6fa"/>
+                                          <g id="Ellipse_1873" data-name="Ellipse 1873" transform="translate(185 2747)" fill="none" stroke="#00c6fa" stroke-width="1">
+                                            <circle cx="5" cy="5" r="5" stroke="none"/>
+                                            <circle cx="5" cy="5" r="4.5" fill="none"/>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+                                </div>
+
+                                <div class="dot-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                                        <g id="Group_1087" data-name="Group 1087" transform="translate(-185 -2747)">
+                                          <circle id="Ellipse_1870" data-name="Ellipse 1870" cx="3" cy="3" r="3" transform="translate(187 2749)" fill="#00c6fa"/>
+                                          <g id="Ellipse_1873" data-name="Ellipse 1873" transform="translate(185 2747)" fill="none" stroke="#00c6fa" stroke-width="1">
+                                            <circle cx="5" cy="5" r="5" stroke="none"/>
+                                            <circle cx="5" cy="5" r="4.5" fill="none"/>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <p class="text ">
+                                    Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain to enter/exit yield farms on
+                                    a multitude of blockchains, with virtually no lower limit of investment, and without having to deal with bridges, swaps and slippage, transaction costs on receiving blockchains etc.
+                                </p>
+
+                                <h3 class="total-raise pb-2">
+                                    <span class="primary-color ">Total Raise - $ </span>
+                                    <span class="normal">100 K</span>
+                                </h3>
+
+
+                                <div class="pool-progress ">
+                                    <div class="d-flex justify-content-between ">
+                                        <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                        <P class="progress-percentage ">100%</P>
+                                    </div>
+                                    <div class="progress ">
+                                        <div class="progress-bar " role="progressbar " style="width: 25%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between progress-rank ">
+                                        <div>
+                                            <p>240,000 busd </p>
+                                        </div>
+                                        <div>
+                                            <p>9,600,000 / 9,600,000 ioen</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="total-raise pb-2">
+                                    <span class="primary-color ">Pool Details</span>
+                                </h3>
+                                <div class="detail-table">
+                                    <div>
+                                        <h2 class="access-table">Access Type
+                                        </h2>
+                                        <h2 class="access-table normal">Levels</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">Hard Cap
+
+                                        </h2>
+                                        <h2 class="access-table normal">$ 100,000</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">Swap Rate
+
+
+                                        </h2>
+                                        <h2 class="access-table normal">2 ARDN per 1 BUSD</h2>
+                                    </div>
+                                </div>
+
+                                <h3 class="total-raise pt-4 pb-2">
+                                    <span class="primary-color ">Token </span>
+                                </h3>
+                                <div class="detail-table">
+                                    <div>
+                                        <h2 class="access-table">Token
+                                        </h2>
+                                        <h2 class="access-table normal">Ariadne (ARDN)</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">Type
+
+                                        </h2>
+                                        <h2 class="access-table normal">BEP-20</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">Total Supply
+
+
+
+                                        </h2>
+                                        <h2 class="access-table normal">25,000,000 ARDN</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">Initial Supply
+
+
+
+
+                                        </h2>
+                                        <h2 class="access-table normal">200,000 ARDN</h2>
+                                    </div>
+
+                                    <div>
+                                        <h2 class="access-table">market cap
+
+
+
+
+                                        </h2>
+                                        <h2 class="access-table normal">$100,000</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pool-sec-footer text-center">
+                                <button class="btn got-to-pool">
+                                    GO TO Pool 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 " src="... " alt="Second slide ">
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w-100 " src="... " alt="Third slide ">
+                    </div>
+                </div>
+                <a class="carousel-control-prev " href="#carouselExampleControls " role="button " data-slide="prev ">
+                    <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Previous</span>
+                </a>
+                <a class="carousel-control-next " href="#carouselExampleControls " role="button " data-slide="next ">
+                    <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pools-live pb-4">
+        <div class="arro-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="77.962" height="77.962" viewBox="0 0 77.962 77.962">
+        <path id="Icon_awesome-arrow-circle-up" data-name="Icon awesome-arrow-circle-up" d="M.563,39.544A38.981,38.981,0,1,1,39.544,78.525,38.974,38.974,0,0,1,.563,39.544Zm22.571,4.543,11.38-11.867v28.7a3.763,3.763,0,0,0,3.772,3.772H40.8a3.763,3.763,0,0,0,3.772-3.772v-28.7l11.38,11.867a3.777,3.777,0,0,0,5.391.063l1.713-1.729a3.757,3.757,0,0,0,0-5.328L42.216,16.234a3.757,3.757,0,0,0-5.328,0L16.014,37.092a3.757,3.757,0,0,0,0,5.328l1.713,1.729A3.8,3.8,0,0,0,23.134,44.086Z" transform="translate(-0.563 -0.563)" fill="#00c6fa" opacity="0.5"/>
+      </svg>
+
+        </div>
+        <div class="container ">
+
+            <div class="pools-section d-flex justify-content-between ">
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">100%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 100%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">50%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 50%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pools-section-1 ">
+
+                    <div class="pool-section-head ">
+                        <div class="pools-sec-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="161.632 " height="167.912 " viewBox="0 0 161.632 167.912 ">
+                                <defs>
+                                  <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                    <stop offset="0 " stop-color="#00e9fa "/>
+                                    <stop offset="1 " stop-color="#024253 "/>
+                                  </linearGradient>
+                                </defs>
+                                <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                                  <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+                " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                                  <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                    <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+                91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+                4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+                C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+                C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+                C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+                92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                    <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+                8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+                54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+                36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+                89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+                104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+                C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+                7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+                88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+                92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+                25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                                  </g>
+                                  <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+                1550.202) " fill="#041d35 "/>
+                                  <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+                " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                                </g>
+                              </svg>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <div class="align-self-center ">
+                                <h3 class="pool-name ">Hello Pool 1</h3>
+                            </div>
+                            <div>
+                                <button class="btn in-days ">
+                                <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                                    <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                                  </svg>
+                                  </span>
+                                <span>in 1 days </span>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pool-sec-body ">
+                        <p class="text ">
+                            Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                        </p>
+                        <div class="pool-sociel-icons ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.687 " height="15.177 " viewBox="0 0 18.687 15.177 ">
+                                    <path id="Icon_awesome-twitter " data-name="Icon awesome-twitter " d="M16.766,7.163c.012.166.012.332.012.5a10.822,10.822,0,0,1-10.9,10.9A10.823,10.823,0,0,1,0,16.838a7.923,7.923,0,0,0,.925.047A7.67,7.67,0,0,0,5.679,15.25,3.837,3.837,0,0,1,2.1,12.594a4.83,4.83,0,0,0,.723.059,4.051,4.051,0,0,0,1.008-.13A3.83,3.83,0,0,1,.759,8.764V8.716A3.857,3.857,0,0,0,2.49,9.2,3.835,3.835,0,0,1,1.3,4.08,10.886,10.886,0,0,0,9.2,8.088a4.323,4.323,0,0,1-.095-.877,3.833,3.833,0,0,1,6.628-2.62,7.54,7.54,0,0,0,2.431-.925,3.819,3.819,0,0,1-1.684,2.111,7.678,7.678,0,0,0,2.205-.593,8.233,8.233,0,0,1-1.921,1.98Z
+                " transform="translate(0 -3.381) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="16.349 " height="13.711 " viewBox="0 0 16.349 13.711 ">
+                                    <path id="Icon_awesome-telegram-plane " data-name="Icon awesome-telegram-plane " d="M16.3,5.776,13.837,17.412c-.186.821-.672,1.026-1.361.639L8.716,15.28,6.9,17.025a.944.944,0,0,1-.755.369l.27-3.829,6.967-6.3c.3-.27-.066-.42-.471-.15L4.3,12.543.592,11.382c-.807-.252-.821-.807.168-1.193L15.264,4.6c.672-.252,1.259.15,1.04,1.175Z
+                " transform="translate(-0.001 -4.528) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="17.654 " height="14.008 " viewBox="0 0 17.654 14.008 ">
+                                    <path id="Icon_awesome-medium-m " data-name="Icon awesome-medium-m " d="M3.09,7.358a.689.689,0,0,0-.223-.577L1.221,4.8V4.5H6.338l3.956,8.675L13.772,4.5h4.88v.3l-1.409,1.35a.411.411,0,0,0-.157.394v9.927a.411.411,0,0,0,.157.394l1.376,1.35v.3H11.7v-.3l1.427-1.383c.139-.139.139-.182.139-.394V8.412L9.294,18.482H8.758L4.144,8.412v6.748a.919.919,0,0,0,.255.774l1.854,2.248v.3H1v-.292l1.854-2.252a.889.889,0,0,0,.237-.774Z
+                " transform="translate(-0.999 -4.5) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18.099 " height="18.103 " viewBox="0 0 18.099 18.103 ">
+                                    <path id="Icon_awesome-globe " data-name="Icon awesome-globe " d="M12.281,6.11C11.752,2.851,10.5.562,9.051.562S6.35,2.851,5.821,6.11Zm-6.734,3.5a22.876,22.876,0,0,0,.12,2.336h6.763a22.876,22.876,0,0,0,.12-2.336,22.876,22.876,0,0,0-.12-2.336H5.668A22.876,22.876,0,0,0,5.548,9.614ZM17.4,6.11A9.07,9.07,0,0,0,11.632.942,12.318,12.318,0,0,1,13.456,6.11ZM6.467.942A9.064,9.064,0,0,0,.7,6.11H4.646A12.268,12.268,0,0,1,6.467.942ZM17.789,7.278H13.6c.077.766.12,1.551.12,2.336s-.044,1.569-.12,2.336h4.183A8.973,8.973,0,0,0,18.1,9.614,9.13,9.13,0,0,0,17.789,7.278ZM4.38,9.614c0-.785.044-1.569.12-2.336H.314a8.848,8.848,0,0,0,0,4.672H4.5C4.423,11.183,4.38,10.4,4.38,9.614Zm1.442,3.5c.529,3.259,1.777,5.548,3.23,5.548s2.7-2.288,3.23-5.548Zm5.814,5.168A9.079,9.079,0,0,0,17.4,13.117H13.46a12.318,12.318,0,0,1-1.825,5.168ZM.7,13.117a9.07,9.07,0,0,0,5.767,5.168,12.318,12.318,0,0,1-1.825-5.168H.7Z
+                " transform="translate(0 -0.563) " fill="#00c6fa "/>
+                                  </svg>
+
+                            </div>
+                        </div>
+                        <h3 class="total-raise ">
+                            <span>Total Raise - $ </span>
+                            <span class="primary-color ">100 K</span>
+                        </h3>
+
+                        <h3 class="total-raise ">
+                            <span>Swap Rate : </span>
+                            <span class="primary-color ">2 ARDN per 1 BUSD</span>
+                        </h3>
+                        <div class="pool-progress ">
+                            <div class="d-flex justify-content-between ">
+                                <p class="progress-title ">finished 1 days, 14 hours ago</p>
+                                <P class="progress-percentage ">100%</P>
+                            </div>
+                            <div class="progress ">
+                                <div class="progress-bar " role="progressbar " style="width: 100%; " aria-valuenow="25 " aria-valuemin="0 " aria-valuemax="100 "></div>
+                            </div>
+                            <div class="d-flex justify-content-between progress-rank ">
+                                <div>
+                                    <p>240,000 busd </p>
+                                </div>
+                                <div>
+                                    <p>9,600,000 / 9,600,000 ioen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="spacer intro-video">
+        <div class="container">
+            <div class="intro-video-bg-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="162.401" height="149.87" viewBox="0 0 162.401 149.87">
+                    <g id="Group_1053" data-name="Group 1053" transform="translate(238.895 60.96) rotate(116)" opacity="0.37">
+                      <path id="Polygon_185" data-name="Polygon 185" d="M53.831,0,71.775,30.359,53.831,60.718H17.944L0,30.359,17.944,0Z" transform="translate(11.586 79.457) rotate(11)" fill="#00c7fb" opacity="0.37"/>
+                      <g id="Polygon_186" data-name="Polygon 186" transform="translate(136.038 158.236) rotate(-16)" fill="none" opacity="0.55">
+                        <path d="M27.421,0l9.14,15.582-9.14,15.582H9.14L0,15.582,9.14,0Z" stroke="none"/>
+                        <path d="M 9.140371322631836 -3.24249267578125e-05 L 27.42117118835449 -3.24249267578125e-05 L 36.56157302856445 15.58166790008545 L 27.42117118835449 31.16336822509766 L 9.140371322631836 31.16336822509766 L -3.0517578125e-05 15.58166790008545 L 9.140371322631836 -3.24249267578125e-05 Z" stroke="none" fill="#00c7fb"/>
+                      </g>
+                    </g>
+                  </svg>
+
+            </div>
+            <div class="intro-video-bg-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="373.195" height="370.093" viewBox="0 0 373.195 370.093">
+                    <g id="Group_1028" data-name="Group 1028" transform="matrix(0.985, 0.174, -0.174, 0.985, 45.081, -23.77)" opacity="0.37">
+                      <path id="Polygon_185" data-name="Polygon 185" d="M109.288,0l36.429,61.635L109.288,123.27H36.429L0,61.635,36.429,0Z" transform="translate(134.496 170.964) rotate(169)" fill="#00c7fb" opacity="0.37"/>
+                      <g id="Polygon_186" data-name="Polygon 186" transform="translate(315.469 59.293) rotate(-164)" fill="none" opacity="0.55">
+                        <path d="M55.67,0,74.227,31.634,55.67,63.267H18.557L0,31.634,18.557,0Z" stroke="none"/>
+                        <path d="M 18.55667495727539 -1.52587890625e-05 L 55.67007446289062 -1.52587890625e-05 L 74.22677612304688 31.63368606567383 L 55.67007446289062 63.26738739013672 L 18.55667495727539 63.26738739013672 L -2.288818359375e-05 31.63368606567383 L 18.55667495727539 -1.52587890625e-05 Z" stroke="none" fill="#00c7fb"/>
+                      </g>
+                      <path id="Polygon_187" data-name="Polygon 187" d="M57.877,0,77.169,34.353,57.877,68.707H19.292L0,34.353,19.292,0Z" transform="translate(226.039 360.082) rotate(-121)" fill="#00c7fb" opacity="0.55"/>
+                    </g>
+                  </svg>
+
+            </div>
+            <div class="intro-video-bg-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="233.923" height="214.127" viewBox="0 0 233.923 214.127">
+                    <g id="Polygon_186" data-name="Polygon 186" transform="translate(187.98 214.127) rotate(-164)" fill="none" opacity="0.55">
+                      <path d="M146.666,0l48.889,83.341-48.889,83.341H48.889L0,83.341,48.889,0Z" stroke="none"/>
+                      <path d="M 48.88873291015625 1.52587890625e-05 L 146.6663818359375 1.52587890625e-05 L 195.5550842285156 83.34095764160156 L 146.6663818359375 166.6819000244141 L 48.88873291015625 166.6819000244141 L 3.0517578125e-05 83.34095764160156 L 48.88873291015625 1.52587890625e-05 Z" stroke="none" fill="#00c7fb"/>
+                    </g>
+                  </svg>
+
+            </div>
+            <h2 class="intro-heading text-center">
+                INTRO VIDEO
+            </h2>
+            <div class="intro-video-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="438.815" height="392.047" viewBox="0 0 438.815 392.047">
+  <path id="Polygon_185" data-name="Polygon 185" d="M287.926,0,383.9,162.381,287.926,324.762H95.975L0,162.381,95.975,0Z" transform="translate(438.815 318.795) rotate(169)" fill="#00c7fb" opacity="0.37"/>
+</svg>
+
+
+            </div>
+            <div class="video-player mt-5 text-center">
+                <iframe width="800" height="360" src="https://www.youtube.com/embed/J3pF2jkQ4vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+        </div>
+    </section>
+
+    <section class="portfolio spacer">
+        <div class="portb-banner-1">
+            <img src="./images/portfolio-banner.png" alt="">
+        </div>
+        <div class="portb-banner-2">
+            <img src="./images/portfolio-banner-1.png" alt="">
+        </div>
+        <div class="container">
+            <h2 class="intro-heading  text-center">
+                INTRO VIDEO
+            </h2>
+
+            <div class="portfolio-icons">
+                <div>
+                    <img src="./images/port-icon-1.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/port-icon-2.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/port-icon-1.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/port-icon-2.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/port-icon-1.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/port-icon-2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="support-chain pb-4  pt-5">
+        <div class="chain-1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300.671" height="288.385" viewBox="0 0 300.671 288.385">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#011321"/>
+                    <stop offset="1" stop-color="#fff"/>
+                  </linearGradient>
+                </defs>
+                <path id="Polygon_226" data-name="Polygon 226" d="M174.294,0l58.1,99.413-58.1,99.413H58.1L0,99.413,58.1,0Z" transform="translate(300.671 172.189) rotate(150)" opacity="0.06" fill="url(#linear-gradient)"/>
+              </svg>
+
+        </div>
+
+        <div class="chain-2">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300.671" height="288.385" viewBox="0 0 300.671 288.385">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#011321"/>
+                    <stop offset="1" stop-color="#fff"/>
+                  </linearGradient>
+                </defs>
+                <path id="Polygon_228" data-name="Polygon 228" d="M174.294,0l58.1,99.413-58.1,99.413H58.1L0,99.413,58.1,0Z" transform="translate(0 116.196) rotate(-30)" opacity="0.06" fill="url(#linear-gradient)"/>
+              </svg>
+
+
+        </div>
+        <div class="container">
+            <h2 class="black-heading text-center">
+                Supported Chains
+            </h2>
+            <div class="chain-img pt-5">
+                <img src="./images/chain.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="partners spacer pt-5">
+
+        <div class="part-banner-1">
+            <img src="./images/partner-bg.png" alt="">
+        </div>
+        <div class="part-banner-2">
+            <img src="./images/partner-bg-1.png" alt="">
+
+        </div>
+        <div class="container">
+            <h2 class="intro-heading  uppercase text-center">
+                Partners
+            </h2>
+
+            <div class="partner-icons">
+                <div>
+                    <img src="./images/part-1.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-2.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-3.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-4.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-5.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-6.png" alt="">
+                </div>
+
+            </div>
+            <div class="partner-row">
+                <div>
+                    <img src="./images/part-7.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-8.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-9.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/part-10.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="bg-diffrent">
+        <section class="support-chain faq spacer  pt-5">
+
+
+            <div class="container">
+                <div class="faq-eclip">
+                    <img src="./images/Polygon 201.png" alt="">
+
+
+                </div>
+                <h2 class="black-heading text-center">
+                    Faqs
+                </h2>
+                <div class="row">
+                    <div class="col-md-6 align-self-end">
+                        <div class="faq-img">
+                            <img src="./images/faq-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div>
+                                    What is Dapp?
+                                  </div>
+                                  <div class="svg-right"><svg xmlns="http://www.w3.org/2000/svg" width="30.746" height="26.354" viewBox="0 0 30.746 26.354">
+                                    <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(-4.499 -5.784)" fill="#fff"/>
+                                  </svg>
+                                
+                                  </div>
+    
+                                  <div class="svg-wrong">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.354" height="30.745" viewBox="0 0 26.354 30.745">
+                                        <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(32.138 -4.499) rotate(90)" fill="#fff"/>
+                                      </svg>
+                                      
+                                  </div>
+                                  </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <div>
+                                                What is Dapp?
+                                              </div>
+                                              <div class="svg-right"><svg xmlns="http://www.w3.org/2000/svg" width="30.746" height="26.354" viewBox="0 0 30.746 26.354">
+                                                <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(-4.499 -5.784)" fill="#fff"/>
+                                              </svg>
+                                            
+                                              </div>
+                
+                                              <div class="svg-wrong">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.354" height="30.745" viewBox="0 0 26.354 30.745">
+                                                    <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(32.138 -4.499) rotate(90)" fill="#fff"/>
+                                                  </svg>
+                                                  
+                                              </div>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <div>
+                                                What is Dapp?
+                                              </div>
+                                              <div class="svg-right"><svg xmlns="http://www.w3.org/2000/svg" width="30.746" height="26.354" viewBox="0 0 30.746 26.354">
+                                                <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(-4.499 -5.784)" fill="#fff"/>
+                                              </svg>
+                                            
+                                              </div>
+                
+                                              <div class="svg-wrong">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.354" height="30.745" viewBox="0 0 26.354 30.745">
+                                                    <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(32.138 -4.499) rotate(90)" fill="#fff"/>
+                                                  </svg>
+                                                  
+                                              </div>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingfour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                            <div>
+                                                What is Dapp?
+                                              </div>
+                                              <div class="svg-right"><svg xmlns="http://www.w3.org/2000/svg" width="30.746" height="26.354" viewBox="0 0 30.746 26.354">
+                                                <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(-4.499 -5.784)" fill="#fff"/>
+                                              </svg>
+                                            
+                                              </div>
+                
+                                              <div class="svg-wrong">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.354" height="30.745" viewBox="0 0 26.354 30.745">
+                                                    <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(32.138 -4.499) rotate(90)" fill="#fff"/>
+                                                  </svg>
+                                                  
+                                              </div>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingfive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                            <div>
+                                                What is Dapp?
+                                              </div>
+                                              <div class="svg-right"><svg xmlns="http://www.w3.org/2000/svg" width="30.746" height="26.354" viewBox="0 0 30.746 26.354">
+                                                <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(-4.499 -5.784)" fill="#fff"/>
+                                              </svg>
+                                            
+                                              </div>
+                
+                                              <div class="svg-wrong">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.354" height="30.745" viewBox="0 0 26.354 30.745">
+                                                    <path id="Icon_metro-arrow-right" data-name="Icon metro-arrow-right" d="M23.621,31.494,34.6,20.514a2.2,2.2,0,0,0,0-3.106L23.621,6.427a2.2,2.2,0,0,0-3.106,3.106l7.232,7.232H6.695a2.2,2.2,0,1,0,0,4.392H27.746l-7.232,7.232a2.2,2.2,0,1,0,3.106,3.106Z" transform="translate(32.138 -4.499) rotate(90)" fill="#fff"/>
+                                                  </svg>
+                                                  
+                                              </div>
+                                  </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Ariadne is a cross-chain DeFi marketplace that is lowering the fees to enter/exit farms on multiple blockchains and saves swaps and bridges costs for both EVM and non-EVM chains. Ariadne enables users of any supported chain.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class=" subscribe">
+            <div class="subcribe-path">
+                <img src="./images/subscribe-path.png" alt="">
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container pb-4">
+                    <div class="subs-eclip">
+                        <img src="./images/Polygon 201.png" alt="">
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 align-self-center">
+                            <img style="width: 60%" src="./images/subscribe-polygon.png" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex ">
+                                <div>
+                                    <p class="get-more">
+                                        Get More Updates
+                                    </p>
+                                    <h4 class="subscribe-text">
+                                        Subscribe Our Newsletters
+                                    </h4>
+                                </div>
+                                <div class="align-self-start subs-email">
+                                    <img src="./images/subs-email.png" alt="">
+                                </div>
+                            </div>
+                            <div class=" subscribe-input ">
+
+                                <input type="text" class="form-control" placeholder="Recipient's username">
+                                <div class="input-subs-badge">
+                                    <span>
+                                        Suscribe 
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.846" height="17.964" viewBox="0 0 16.846 17.964">
+                                            <g id="Group_1540" data-name="Group 1540" transform="translate(-1612.589 -4617.437)">
+                                              <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M18.421,15.175l-6.8-6.792a1.278,1.278,0,0,1,0-1.813,1.3,1.3,0,0,1,1.818,0l7.7,7.7a1.281,1.281,0,0,1,.037,1.77l-7.734,7.75a1.284,1.284,0,0,1-1.818-1.813Z" transform="translate(1601.343 4611.24)" fill="#fff"/>
+                                              <path id="Icon_ionic-ios-arrow-forward-2" data-name="Icon ionic-ios-arrow-forward" d="M18.421,15.175l-6.8-6.792a1.278,1.278,0,0,1,0-1.813,1.3,1.3,0,0,1,1.818,0l7.7,7.7a1.281,1.281,0,0,1,.037,1.77l-7.734,7.75a1.284,1.284,0,0,1-1.818-1.813Z" transform="translate(1607.917 4611.24)" fill="#fff"/>
+                                            </g>
+                                          </svg>
+                                          
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+            <div class="footer-bg-1">
+                <img src="./images/footer-polygon.png" alt="">
+
+            </div>
+            <div class="footer-bg-2">
+                <img src="./images/Shape.png" alt="">
+
+            </div>
+            <div class="footer-side-poly">
+                <img src="./images/Polygon.png" alt="">
+            </div>
+            <div class="footer-side-poly-2">
+                <img src="./images/footer-side-2.png" alt="">
+            </div>
+            <div class="inner-footer">
+                <div class="container position-relative">
+                    <div class="footer-dot">
+                        <img src="./images/dots.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 align-self-center">
+                            <img class="footer-logo" src="./images/footer-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3 align-self-center">
+                            <h3 class="footer-heading">Connect with us</h3>
+                            <div class="footer-link-icon">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.401" height="47.945" viewBox="0 0 48.401 47.945">
+                                        <g id="Group_1541" data-name="Group 1541" transform="translate(-193.2 -90.445)">
+                                          <path id="Ellipse_3" data-name="Ellipse 3" d="M24.2,0A23.974,23.974,0,1,1,0,23.972,24.087,24.087,0,0,1,24.2,0Z" transform="translate(193.2 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M12.994,0,9.754,0c-3.639,0-5.99,2.421-5.99,6.165V9.01H.509A.508.508,0,0,0,0,9.519v4.123a.508.508,0,0,0,.509.509H3.764V24.544a.512.512,0,0,0,.509.514H8.521a.509.509,0,0,0,.509-.514V14.152h3.809a.511.511,0,0,0,.509-.509V9.519A.505.505,0,0,0,13.2,9.16a.531.531,0,0,0-.364-.15H9.03V6.6c0-1.158.275-1.747,1.782-1.747h2.181a.511.511,0,0,0,.509-.509V.519A.512.512,0,0,0,12.994,0Z" transform="translate(210.557 101.641)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.401" height="47.945" viewBox="0 0 48.401 47.945">
+                                        <g id="Group_1542" data-name="Group 1542" transform="translate(-257.091 -90.445)">
+                                          <path id="Ellipse_3_copy" data-name="Ellipse 3 copy" d="M24.2,0A23.974,23.974,0,1,1,0,23.972,24.087,24.087,0,0,1,24.2,0Z" transform="translate(257.091 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M32.077,2.965a14.045,14.045,0,0,1-3.789,1A6.32,6.32,0,0,0,31.179.469,13.558,13.558,0,0,1,27.01,2a6.713,6.713,0,0,0-4.8-2,6.45,6.45,0,0,0-6.574,6.325,6.205,6.205,0,0,0,.155,1.443A18.877,18.877,0,0,1,2.236,1.153a6.176,6.176,0,0,0-.9,3.195A6.273,6.273,0,0,0,4.253,9.6a6.716,6.716,0,0,1-2.97-.779V8.9a6.421,6.421,0,0,0,5.271,6.21,6.881,6.881,0,0,1-1.727.21,6.032,6.032,0,0,1-1.243-.11,6.608,6.608,0,0,0,6.145,4.4,13.52,13.52,0,0,1-8.152,2.7A12.638,12.638,0,0,1,0,22.218a19.054,19.054,0,0,0,10.088,2.84A18.215,18.215,0,0,0,28.8,7.068c0-.28-.01-.549-.025-.819A12.821,12.821,0,0,0,32.077,2.965Z" transform="translate(265.376 101.641)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.453" height="47.945" viewBox="0 0 48.453 47.945">
+                                        <g id="Group_1543" data-name="Group 1543" transform="translate(-319.991 -90.445)">
+                                          <path id="Ellipse_3_copy_3" data-name="Ellipse 3 copy 3" d="M24.227,0A24.1,24.1,0,0,1,48.453,23.972,24.1,24.1,0,0,1,24.227,47.945,24.1,24.1,0,0,1,0,23.972,24.1,24.1,0,0,1,24.227,0Z" transform="translate(319.991 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M7.911,25.055A7.875,7.875,0,0,1,0,17.225V7.831A7.875,7.875,0,0,1,7.911,0h9.5a7.875,7.875,0,0,1,7.911,7.831v9.394a7.875,7.875,0,0,1-7.911,7.831ZM2.377,7.831v9.394a5.514,5.514,0,0,0,5.535,5.481h9.5a5.517,5.517,0,0,0,5.535-5.481V7.831A5.514,5.514,0,0,0,17.413,2.35h-9.5A5.512,5.512,0,0,0,2.377,7.831Zm3.954,4.7a6.333,6.333,0,1,1,6.33,6.263A6.3,6.3,0,0,1,6.33,12.53Zm2.377,0A3.956,3.956,0,1,0,12.66,8.612,3.942,3.942,0,0,0,8.707,12.53ZM18.626,5.8a.842.842,0,1,1,.845.831A.836.836,0,0,1,18.626,5.8Z" transform="translate(331.147 101.643)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.453" height="47.945" viewBox="0 0 48.453 47.945">
+                                        <g id="Group_1544" data-name="Group 1544" transform="translate(-384.352 -90.445)">
+                                          <path id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" d="M24.227,0A24.1,24.1,0,0,1,48.453,23.972,24.1,24.1,0,0,1,24.227,47.945,24.1,24.1,0,0,1,0,23.972,24.1,24.1,0,0,1,24.227,0Z" transform="translate(384.352 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M19.655,25.055V14.093c-1.8-4.331-6.083,1.563-6.083,1.563v9.4H7.911V7.831h5.661v3.289a7.9,7.9,0,0,1,6.083-3.289,5.228,5.228,0,0,1,1.02.1c.076.018.153.027.229.045l.18.054a5.605,5.605,0,0,1,4.232,5.4V25.055ZM0,25.055V7.831H5.661V25.055ZM0,2.74A2.754,2.754,0,0,1,2.767,0,2.755,2.755,0,0,1,5.539,2.74a2.755,2.755,0,0,1-2.772,2.74A2.754,2.754,0,0,1,0,2.74Z" transform="translate(396.361 101.643)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+
+                            <div class="about-us-link">
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Work</a></li>
+                                    <li><a href="#">Our Clients</a></li>
+
+                                    <li><a href="#">Technology</a></li>
+
+                                    <li><a href="#">Help & Support</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1545" data-name="Group 1545" transform="translate(-329.2 -59.324)">
+                                          <path id="Ellipse_4" data-name="Ellipse 4" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 59.324)" fill="#00c7fb"/>
+                                          <path id="phone" d="M17.733,13.861a.841.841,0,0,1-.264.744l-2.5,2.456a1.4,1.4,0,0,1-.441.317,1.934,1.934,0,0,1-.536.169l-.113.009c-.062.006-.142.009-.243.009a8.412,8.412,0,0,1-3.11-.717A16.644,16.644,0,0,1,7.91,15.425a19.506,19.506,0,0,1-3.119-2.607,20.505,20.505,0,0,1-2.177-2.456A17.551,17.551,0,0,1,1.224,8.194a11.711,11.711,0,0,1-.791-1.8,9.47,9.47,0,0,1-.355-1.4A4.41,4.41,0,0,1,0,4.073c.012-.222.018-.347.018-.37a1.7,1.7,0,0,1,.169-.53,1.435,1.435,0,0,1,.32-.438L3.008.261A.827.827,0,0,1,3.609,0a.693.693,0,0,1,.432.139,1.315,1.315,0,0,1,.32.344L6.37,4.26a.9.9,0,0,1,.095.652,1.172,1.172,0,0,1-.32.6l-.921.912a.313.313,0,0,0-.065.118.487.487,0,0,0-.027.142,3.193,3.193,0,0,0,.338.892,8.133,8.133,0,0,0,.693,1.087A12.312,12.312,0,0,0,7.5,10.14,12.781,12.781,0,0,0,9,11.47a8.366,8.366,0,0,0,1.1.7,2.753,2.753,0,0,0,.675.27l.234.047a.451.451,0,0,0,.121-.027.347.347,0,0,0,.121-.065l1.072-1.081a1.155,1.155,0,0,1,.788-.3.958.958,0,0,1,.507.113h.021l3.623,2.121A.932.932,0,0,1,17.733,13.861Z" transform="translate(337.061 67.378)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">+000 123 456 7890
+                                    </p>
+                                    <p class="footer-sociel-contact">+000 123 456 7890
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1546" data-name="Group 1546" transform="translate(-329.2 -123.971)">
+                                          <path id="Ellipse_4_copy" data-name="Ellipse 4 copy" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 123.971)" fill="#00c7fb"/>
+                                          <path id="gmail" d="M1.128,11.4a1.133,1.133,0,0,1-.773-.309L5.913,6.252,7.857,7.98,9.8,6.252l5.553,4.836a1.133,1.133,0,0,1-.773.309Zm9.158-5.609L15.711,1V10.47ZM0,1,5.423,5.788,0,10.47ZM.354.312A1.128,1.128,0,0,1,1.128,0H14.581a1.127,1.127,0,0,1,.776.309l-7.5,6.529Z" transform="translate(337.817 136.347)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">yourgmail@name.com
+
+                                    </p>
+                                    <p class="footer-sociel-contact">www.websitename.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1546" data-name="Group 1546" transform="translate(-329.2 -123.971)">
+                                          <path id="Ellipse_4_copy" data-name="Ellipse 4 copy" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 123.971)" fill="#00c7fb"/>
+                                          <path id="gmail" d="M1.128,11.4a1.133,1.133,0,0,1-.773-.309L5.913,6.252,7.857,7.98,9.8,6.252l5.553,4.836a1.133,1.133,0,0,1-.773.309Zm9.158-5.609L15.711,1V10.47ZM0,1,5.423,5.788,0,10.47ZM.354.312A1.128,1.128,0,0,1,1.128,0H14.581a1.127,1.127,0,0,1,.776.309l-7.5,6.529Z" transform="translate(337.817 136.347)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">youtube.com
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js " integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="anonymous "></script>
+</body>
+
+</html>
