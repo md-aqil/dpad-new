@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="pool-detail-page">
+
+    <!--header  -->
+
+    <section class="header">
+        <div class="container">
+            <div class="navigation">
+                <nav class="navbar navbar-expand-lg  ">
+                    <a class="navbar-brand" href="#"><img style="width: 65%;" src="./images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <img style="width: 80%;" src="./images/switch.png" alt="">
+                            </li>
+
+                        </ul>
+                        <div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="./all-pool.html">All Pools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Voting</a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./stats.html">Stats</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./staking.html">Staking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-border">
+                                    <span><svg id="Group_1422" data-name="Group 1422" xmlns="http://www.w3.org/2000/svg" width="35.676" height="41.268" viewBox="0 0 35.676 41.268">
+                                        <path id="Path_4682" data-name="Path 4682" d="M86,104.03v20.6l13.726,7.925v-1.624l-12.32-7.113V104.842l15.967-9.218V94Z" transform="translate(-86 -94)" fill="#00c7fb"/>
+                                        <path id="Path_4683" data-name="Path 4683" d="M144.285,135.76l-13.3-7.679-13.705,7.913v11.715h1.406v-10.9l12.3-7.1,10.487,6.055Z" transform="translate(-113.146 -123.578)" fill="#00c7fb"/>
+                                        <path id="Path_4684" data-name="Path 4684" d="M146.167,220.105v10.767l-12.3,7.1-10.454-6.035H120.6l13.266,7.659,13.705-7.913V220.105Z" transform="translate(-116.029 -203.442)" fill="#00c7fb"/>
+                                        <path id="Path_4685" data-name="Path 4685" d="M155.136,159.6l-8.111-4.716v-11.29l9.071-5.121v-4.245H157.5v5.066l-9.071,5.121v9.66l5.3,3.081,0-9.355h1.406Z" transform="translate(-138.961 -128.912)" fill="#00c7fb"/>
+                                        <path id="Path_4686" data-name="Path 4686" d="M221.2,108.243v1.624l12.707,7.337v18.974l-15.534,9v-8.139l8.877-4.682V121.058l-8.14-5.163v12.658h1.406V118.4l5.328,3.45V131.5l-8.877,4.683v9.523l-.028,1.919,18.375-10.64v-20.6Z" transform="translate(-199.636 -106.361)" fill="#00c7fb"/>
+                                      </svg>
+                                      </span>
+                                      <span>
+                                        Buy Dpad
+                                      </span>
+                                </button>
+
+
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-filled dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Connect Wallet
+                                    </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="61.462" viewBox="0 0 51.058 61.462">
+                                    <g id="menu" transform="translate(0.5 0.673)">
+                                      <path id="Icon_awesome-hamburger" data-name="Icon awesome-hamburger" d="M44.553,23.758H4.609a4.609,4.609,0,0,0,0,9.218H44.553a4.609,4.609,0,0,0,0-9.218ZM46.09,36.049H3.073a1.536,1.536,0,0,0-1.536,1.536v1.536a6.145,6.145,0,0,0,6.145,6.145h33.8a6.145,6.145,0,0,0,6.145-6.145V37.585A1.536,1.536,0,0,0,46.09,36.049Z" transform="translate(0 15.022)" fill="#00c6fa" stroke="#1f44dd" stroke-width="1"/>
+                                      <path id="Icon_awesome-hamburger-2" data-name="Icon awesome-hamburger" d="M5.631,20.686h37.9c3.319,0,5.245-4.215,3.343-7.286C43.017,7.166,34.524,2.26,24.581,2.25,14.639,2.26,6.145,7.166,2.287,13.4.384,16.47,2.311,20.686,5.631,20.686ZM36.872,9.932a1.536,1.536,0,1,1-1.536,1.536A1.536,1.536,0,0,1,36.872,9.932ZM24.581,6.859A1.536,1.536,0,1,1,23.045,8.4,1.536,1.536,0,0,1,24.581,6.859ZM12.291,9.932a1.536,1.536,0,1,1-1.536,1.536A1.536,1.536,0,0,1,12.291,9.932Z" transform="matrix(0.921, 0.391, -0.391, 0.921, 6.9, -2.671)" fill="#00c6fa" stroke="#1f44dd" stroke-width="1"/>
+                                    </g>
+                                  </svg>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="pools-live reward overflow-hidden pt-4 ">
+        <div class="subcribe-path pool-subs">
+            <img src="./images/subscribe-path.png" alt="">
+        </div>
+        <div class="container">
+            <div class="pools-section-detail border-none position-relative">
+                <div>
+                    <img class="pool-detail-bg" src="./images/DETAIL-BG.png" alt="">
+
+                </div>
+                <div class="pool-section-head d-flex justify-content-between">
+
+                    <div class="d-flex">
+                        <div class="pool-detail-logo ">
+                            <svg xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " width="100.632 " height="100.912 " viewBox="0 0 161.632 167.912 ">
+                            <defs>
+                              <linearGradient id="linear-gradient " x1="0.368 " y1="0.286 " x2="0.775 " y2="0.955 " gradientUnits="objectBoundingBox ">
+                                <stop offset="0 " stop-color="#00e9fa "/>
+                                <stop offset="1 " stop-color="#024253 "/>
+                              </linearGradient>
+                            </defs>
+                            <g id="Group_1540 " data-name="Group 1540 " transform="translate(-738.185 -1502.141) ">
+                              <path id="Polygon_230 " data-name="Polygon 230 " d="M85.338,0A20,20,0,0,1,102.7,10.08L123.6,46.656a20,20,0,0,1,0,19.839L102.7,103.071a20,20,0,0,1-17.367,10.08H43.924a20,20,0,0,1-17.367-10.08L5.666,66.5a20,20,0,0,1,0-19.839L26.558,10.08A20,20,0,0,1,43.924,0Z
+            " transform="translate(899.817 1556.998) rotate(119) " fill="#041d35 "/>
+                              <g id="Polygon_231 " data-name="Polygon 231 " transform="translate(887.734 1560.896) rotate(119) " fill="#00c6fa ">
+                                <path d="M 71.03413391113281 95.22968292236328 L 39.17676544189453 95.22968292236328 C 35.91512298583984 95.22968292236328 32.7005500793457 94.36336517333984 29.88059234619141 92.72441101074219 C 27.06063461303711
+            91.08543395996094 24.71670722961426 88.72113800048828 23.10220718383789 85.88710784912109 L 6.943192481994629 57.52226638793945 C 5.356449604034424 54.73698043823242 4.517749786376953 51.57039642333984 4.517749786376953 48.36483764648438 C
+            4.517749786376953 45.15927886962891 5.356449604034424 41.99269485473633 6.943192481994629 39.2074089050293 L 23.10222053527832 10.84256649017334 C 24.71672058105469 8.008537292480469 27.06064987182617 5.644237518310547 29.88059234619141 4.005266189575195
+            C 32.7005500793457 2.36630916595459 35.91512298583984 1.49999475479126 39.17676544189453 1.49999475479126 L 71.03411865234375 1.49999475479126 C 74.2957763671875 1.49999475479126 77.51033782958984 2.36630916595459 80.33030700683594 4.005266189575195
+            C 83.15025329589844 5.644237518310547 85.49419403076172 8.008537292480469 87.10869598388672 10.84256649017334 L 103.267707824707 39.2074089050293 C 104.8544464111328 41.99269485473633 105.6931610107422 45.15927886962891 105.6931610107422 48.36483764648438
+            C 105.6931610107422 51.57039642333984 104.8544464111328 54.73698043823242 103.267707824707 57.52226638793945 L 87.10869598388672 85.88710784912109 C 85.49419403076172 88.72113800048828 83.15026092529297 91.08543395996094 80.33030700683594
+            92.72441101074219 C 77.51035308837891 94.36336517333984 74.2957763671875 95.22968292236328 71.03413391113281 95.22968292236328 Z " stroke="none "/>
+                                <path d="M 39.17676544189453 3.000007629394531 C 36.17958068847656 3.000007629394531 33.22564697265625 3.796073913574219 30.63434600830078 5.302154541015625 C 28.04302978515625 6.808219909667969 25.88915252685547
+            8.980819702148438 24.40554809570312 11.58505249023438 L 8.246536254882812 39.94990539550781 C 6.7884521484375 42.50935363769531 6.017730712890625 45.419189453125 6.017730712890625 48.36483764648438 C 6.017730712890625 51.31048583984375 6.788429260253906
+            54.22032165527344 8.246513366699219 56.77978897094727 L 24.40553283691406 85.14462280273438 C 25.88912963867188 87.74885559082031 28.04301452636719 89.92145538330078 30.63433074951172 91.42752075195312 C 33.22564697265625 92.93360137939453
+            36.1795654296875 93.72966766357422 39.17676544189453 93.72966766357422 L 71.03413391113281 93.72966766357422 C 74.03131103515625 93.72966766357422 76.98524475097656 92.93360137939453 79.57655334472656 91.42752075195312 C 82.16786193847656
+            89.92145538330078 84.32174682617188 87.74885559082031 85.80535125732422 85.14462280273438 L 101.9643630981445 56.77976989746094 C 103.4224472045898 54.22030258178711 104.1931457519531 51.31047058105469 104.1931457519531 48.36483764648438 C
+            104.1931457519531 45.419189453125 103.4224472045898 42.50935363769531 101.9643630981445 39.94988632202148 L 85.80535125732422 11.58505249023438 C 84.32174682617188 8.980819702148438 82.16786193847656 6.808219909667969 79.57655334472656 5.302154541015625
+            C 76.98524475097656 3.796073913574219 74.03131103515625 3.000007629394531 71.03413391113281 3.000007629394531 L 39.17676544189453 3.000007629394531 M 39.17676544189453 7.62939453125e-06 L 71.03413391113281 7.62939453125e-06 C 78.22066497802734
+            7.62939453125e-06 84.85472106933594 3.855720520019531 88.41203308105469 10.10007476806641 L 104.5710525512695 38.46490478515625 C 108.0671844482422 44.60187149047852 108.0671844482422 52.12780380249023 104.5710525512695 58.26475524902344 L
+            88.41203308105469 86.62960815429688 C 84.85472106933594 92.87395477294922 78.22066497802734 96.72966766357422 71.03413391113281 96.72966766357422 L 39.17676544189453 96.72966766357422 C 31.99021911621094 96.72966766357422 25.35616302490234
+            92.87395477294922 21.79885101318359 86.62960815429688 L 5.63983154296875 58.2647705078125 C 2.143699645996094 52.12780380249023 2.143699645996094 44.60187149047852 5.639846801757812 38.46490478515625 L 21.79886627197266 10.10007476806641 C
+            25.35618591308594 3.855720520019531 31.990234375 7.62939453125e-06 39.17676544189453 7.62939453125e-06 Z " stroke="none " fill="#00c6fa "/>
+                              </g>
+                              <path id="Icon_awesome-ethereum " data-name="Icon awesome-ethereum " d="M42.636,36.106,21.606,48.954.563,36.106,21.606,0ZM21.606,53.079.563,40.232,21.606,70.883,42.65,40.232,21.606,53.079Z " transform="translate(797.112
+            1550.202) " fill="#041d35 "/>
+                              <path id="Subtraction_30 " data-name="Subtraction 30 " d="M6213.65,1052.339a20,20,0,0,1-17.1-9.621l-21.862-36a19.994,19.994,0,0,1-.4-20.076l20.078-36.222a20,20,0,0,1,17.236-10.3l42.118-.54.255,0a20,20,0,0,1,17.1,9.621l21.862,36a20,20,0,0,1,.4,20.076l-20.078,36.222a20,20,0,0,1-17.236,10.3l-42.118.541ZM6253.3,940.8l-.256,0-40.7.522a20.039,20.039,0,0,0-17.236,10.3l-19.4,34.994a20.036,20.036,0,0,0,.4,20.076l21.127,34.8a20.115,20.115,0,0,0,17.092,9.619c.085,0,.172,0,.259,0l40.7-.521a20.042,20.042,0,0,0,17.236-10.3l19.4-34.994a20.038,20.038,0,0,0-.4-20.076l-21.127-34.8A20.114,20.114,0,0,0,6253.3,940.8Z
+            " transform="translate(-5414.098 590.141) " fill="url(#linear-gradient) "/>
+                            </g>
+                          </svg>
+
+
+                        </div>
+                        <div class="align-self-center ">
+                            <h3 class="pool-name-detail ml-2 ">Ariadne</h3>
+                        </div>
+                    </div>
+
+                    <div class="align-self-center">
+                        <div class="d-flex justify-content-between">
+
+
+
+                            <div class="align-self-center">
+                                <div class="pool-sociel-icons ">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <g id="Group_1547" data-name="Group 1547" transform="translate(-1112 -216)">
+                                          <circle id="Ellipse_1909" data-name="Ellipse 1909" cx="30" cy="30" r="30" transform="translate(1112 216)" fill="#00c6fa" opacity="0.11"/>
+                                          <g id="_3676655-removebg-preview" data-name="3676655-removebg-preview" transform="translate(1125.75 229.737)">
+                                            <path id="Path_6141" data-name="Path 6141" d="M29.248-485.81a14.952,14.952,0,0,0-5.763,1.944,17.505,17.505,0,0,0-4.667,3.889,17.372,17.372,0,0,0-3.316,6.47,22.174,22.174,0,0,0-.5,4.1,21.389,21.389,0,0,0,.707,4.964,17.325,17.325,0,0,0,4.7,7.339,10.048,10.048,0,0,0,1.81,1.435,15.3,15.3,0,0,0,8.867,2.857,15.639,15.639,0,0,0,9.934-2.821,17.033,17.033,0,0,0,6.491-8.612,22.57,22.57,0,0,0,.643-3.288,21.586,21.586,0,0,0-.028-3.882,14.493,14.493,0,0,0-1.746-5.664,16.555,16.555,0,0,0-7.417-7.226,14.986,14.986,0,0,0-5.19-1.541A21.48,21.48,0,0,0,29.248-485.81Zm3.146,4.363c0,.071-.191,1.259-.431,2.637-.658,3.875-.771,4.554-.771,4.61,0,.113.2.049,1.025-.339s3.712-1.655,3.762-1.655-.007.339-.262,1.273c-.417,1.492-.29,1.329-1.4,1.824-1.7.749-3.507,1.57-3.535,1.605a33.353,33.353,0,0,0-.686,4.349c-.064.445-.191,1.315-.29,1.93a10.363,10.363,0,0,0-.156,1.23c.021.106.467.12,5.749.127,4.009.014,5.727.035,5.749.092a10.032,10.032,0,0,1-.3,1.195c-.184.615-.431,1.457-.544,1.874l-.212.764H24.475v-.156c0-.148.3-1.966,1.068-6.484.233-1.372.417-2.574.4-2.659-.021-.163-.042-.156-.94.262-1.633.749-2.185.99-2.736,1.188-.474.17-.552.177-.552.078.007-.064.156-.658.339-1.315l.332-1.2.318-.156c.177-.085.495-.226.707-.3a18.2,18.2,0,0,0,3.048-1.45c.071-.17.594-3.323.7-4.235.071-.552.707-4.483.82-5.013l.042-.191h2.185C32.246-481.568,32.394-481.56,32.394-481.447Z" transform="translate(-15 485.948)" fill="#00c6fa"/>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <g id="Group_1548" data-name="Group 1548" transform="translate(-1194 -216)">
+                                          <circle id="Ellipse_1908" data-name="Ellipse 1908" cx="30" cy="30" r="30" transform="translate(1194 216)" fill="#00c6fa" opacity="0.11"/>
+                                          <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M30.7,10.306c.022.3.022.608.022.912,0,9.27-7.056,19.952-19.952,19.952A19.817,19.817,0,0,1,0,28.022a14.508,14.508,0,0,0,1.693.087,14.044,14.044,0,0,0,8.706-3A7.025,7.025,0,0,1,3.843,20.25a8.843,8.843,0,0,0,1.324.109,7.416,7.416,0,0,0,1.845-.239,7.013,7.013,0,0,1-5.623-6.882V13.15a7.062,7.062,0,0,0,3.17.89A7.023,7.023,0,0,1,2.388,4.662,19.933,19.933,0,0,0,16.847,12a7.916,7.916,0,0,1-.174-1.607A7.019,7.019,0,0,1,28.81,5.6,13.806,13.806,0,0,0,33.26,3.9a6.993,6.993,0,0,1-3.083,3.864,14.058,14.058,0,0,0,4.038-1.085A15.074,15.074,0,0,1,30.7,10.306Z" transform="translate(1208.466 228.923)" fill="#00c6fa"/>
+                                        </g>
+                                      </svg>
+
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <g id="Group_1549" data-name="Group 1549" transform="translate(-1280 -216)">
+                                          <circle id="Ellipse_1907" data-name="Ellipse 1907" cx="30" cy="30" r="30" transform="translate(1280 216)" fill="#00c6fa" opacity="0.11"/>
+                                          <path id="Icon_awesome-telegram-plane" data-name="Icon awesome-telegram-plane" d="M29.852,6.814l-4.518,21.3c-.341,1.5-1.23,1.878-2.493,1.169l-6.883-5.072L12.637,27.41a1.729,1.729,0,0,1-1.383.675l.495-7.01L24.506,9.547c.555-.495-.12-.769-.862-.274L7.872,19.2l-6.79-2.125c-1.477-.461-1.5-1.477.307-2.185L27.947,4.662c1.23-.461,2.306.274,1.9,2.152Z" transform="translate(1292.07 229.315)" fill="#00c6fa"/>
+                                        </g>
+                                      </svg>
+
+
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <g id="Group_1550" data-name="Group 1550" transform="translate(-1357 -216)">
+                                          <circle id="Ellipse_1906" data-name="Ellipse 1906" cx="30" cy="30" r="30" transform="translate(1357 216)" fill="#00c6fa" opacity="0.11"/>
+                                          <path id="Icon_awesome-medium-m" data-name="Icon awesome-medium-m" d="M4.828,9.733A1.262,1.262,0,0,0,4.42,8.677L1.406,5.041V4.5h9.369l7.244,15.885L24.388,4.5h8.935v.541l-2.58,2.473a.753.753,0,0,0-.287.722V26.413a.753.753,0,0,0,.287.722l2.519,2.473v.541H20.585v-.541L23.2,27.074c.254-.254.254-.334.254-.722V11.664L16.188,30.1h-.982L6.759,11.664V24.02a1.683,1.683,0,0,0,.468,1.417l3.395,4.117v.541H1V29.56l3.395-4.123a1.628,1.628,0,0,0,.434-1.417Z" transform="translate(1370.398 228.83)" fill="#00c6fa"/>
+                                        </g>
+                                      </svg>
+
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                                        <g id="Group_1551" data-name="Group 1551" transform="translate(-1440 -216)">
+                                          <circle id="Ellipse_1905" data-name="Ellipse 1905" cx="30" cy="30" r="30" transform="translate(1440 216)" fill="#00c6fa" opacity="0.11"/>
+                                          <g id="Group_1221" data-name="Group 1221" transform="translate(-154.797 -2203.724)">
+                                            <g id="Group_1080" data-name="Group 1080" transform="translate(1363.264 2433.461)">
+                                              <path id="Icon_awesome-globe" data-name="Icon awesome-globe" d="M22.487,10.72C21.518,4.753,19.233.563,16.573.563s-4.945,4.19-5.914,10.158Zm-12.33,6.415a41.887,41.887,0,0,0,.221,4.277H22.761a41.887,41.887,0,0,0,.221-4.277,41.887,41.887,0,0,0-.221-4.277H10.378A41.887,41.887,0,0,0,10.158,17.136Zm21.7-6.415A16.608,16.608,0,0,0,21.3,1.257a22.555,22.555,0,0,1,3.341,9.463ZM11.842,1.258A16.6,16.6,0,0,0,1.29,10.72H8.507a22.463,22.463,0,0,1,3.335-9.463Zm20.73,11.6H24.906c.14,1.4.221,2.84.221,4.277s-.08,2.874-.221,4.277h7.658a16.43,16.43,0,0,0,.575-4.277A16.717,16.717,0,0,0,32.572,12.859ZM8.019,17.136c0-1.437.08-2.874.221-4.277H.575a16.2,16.2,0,0,0,0,8.554H8.233C8.1,20.009,8.019,18.572,8.019,17.136Zm2.64,6.415c.969,5.968,3.254,10.158,5.914,10.158s4.945-4.19,5.914-10.158ZM21.3,33.014a16.624,16.624,0,0,0,10.559-9.463H24.646A22.555,22.555,0,0,1,21.3,33.014ZM1.29,23.551a16.608,16.608,0,0,0,10.559,9.463,22.555,22.555,0,0,1-3.341-9.463H1.29Z" transform="translate(244.644 -0.563)" fill="#00c6fa"/>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="align-self-center">
+                                <button class="btn in-days ">
+                        <span><svg xmlns="http://www.w3.org/2000/svg " width="8 " height="8 " viewBox="0 0 8 8 ">
+                            <circle id="Ellipse_11 " data-name="Ellipse 11 " cx="4 " cy="4 " r="4 " fill="#fff "/>
+                          </svg>
+                          </span>
+                        <span>in 1 days </span>
+                    </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pool-sec-body  pt-0">
+                    <div class="detail-video-play-section">
+                        <div class=" height-100 p-2 detail-video-play oposite-gredient">
+                            <div class="black-inner p-3 height-100 ">
+                                <div class="d-flex justify-content-around ">
+                                    <div class="align-self-center">
+                                        <h2 class=" pool-name-detail font-bold ">DPAD Tokenomics </h2>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <h2 class="primary-color font-24 ">(0x31D0a7AdA4d4c131Eb612DB48861211F63e57610)</h2>
+                                    </div>
+
+                                    <div style="cursor: pointer; z-index: 1000;">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 58 58">
+                                                <g id="Group_1258" data-name="Group 1258" transform="translate(-1555 -420)">
+                                                  <circle id="Ellipse_1912" data-name="Ellipse 1912" cx="29" cy="29" r="29" transform="translate(1555 420)" fill="#00c6fa" opacity="0.3"/>
+                                                  <path id="Icon_awesome-copy" data-name="Icon awesome-copy" d="M17.6,24.645v2.2a1.32,1.32,0,0,1-1.32,1.32H1.32A1.32,1.32,0,0,1,0,26.845V6.6a1.32,1.32,0,0,1,1.32-1.32H5.281V21.564a3.084,3.084,0,0,0,3.081,3.081Zm0-18.924V0H8.362a1.32,1.32,0,0,0-1.32,1.32V21.564a1.32,1.32,0,0,0,1.32,1.32H23.324a1.32,1.32,0,0,0,1.32-1.32V7.041H18.924A1.324,1.324,0,0,1,17.6,5.721Zm6.655-1.707L20.63.387A1.32,1.32,0,0,0,19.7,0h-.333V5.281h5.281V4.948a1.32,1.32,0,0,0-.387-.934Z" transform="translate(1572 435)" fill="#00c6fa"/>
+                                                </g>
+                                              </svg>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="row pt-4">
+                                        <div class="col-md-3 text-center">
+                                            <h2 class=" font-24 pool-name-detail font-bold ">Total Supply</h2>
+                                            <h2 class=" token-rank ">1,000,000</h2>
+
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <h2 class=" font-24 pool-name-detail font-bold ">Total Staked</h2>
+                                            <h2 class="token-rank ">393,366 ($2,993,515.26)</h2>
+
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <h2 class=" font-24 pool-name-detail font-bold ">Total Burned</h2>
+                                            <h2 class=" token-rank ">393,366 ($2,993,515.26)</h2>
+
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <h2 class=" font-24 pool-name-detail font-bold ">Circulating Supply</h2>
+                                            <h2 class=" position-relative token-rank ">535,383 ($4,074,264.63) <span class="token-rang-copy"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40">
+                                                <g id="Group_1564" data-name="Group 1564" transform="translate(-1638.335 -598)">
+                                                  <g id="Ellipse_1911" data-name="Ellipse 1911" transform="translate(1638.335 598)" fill="#00c6fa" stroke="#00c6fa" stroke-width="1" opacity="0.22">
+                                                    <circle cx="20" cy="20" r="20" stroke="none"/>
+                                                    <circle cx="20" cy="20" r="19.5" fill="none"/>
+                                                  </g>
+                                                  <path id="Icon_awesome-copy" data-name="Icon awesome-copy" d="M11.925,16.7v1.491a.894.894,0,0,1-.894.894H.894A.894.894,0,0,1,0,18.186V4.472a.894.894,0,0,1,.894-.894H3.578V14.608A2.089,2.089,0,0,0,5.664,16.7Zm0-12.82V0H5.664A.894.894,0,0,0,4.77.894V14.608a.894.894,0,0,0,.894.894H15.8a.894.894,0,0,0,.894-.894V4.77H12.82A.9.9,0,0,1,11.925,3.876Zm4.508-1.156L13.976.262A.894.894,0,0,0,13.344,0h-.226V3.578H16.7V3.352a.894.894,0,0,0-.262-.632Z" transform="translate(1650.206 608.516)" fill="#00c6fa"/>
+                                                </g>
+                                              </svg>
+                                              </span></h2>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="price-reward">
+                        <div class="detail-video-play-section">
+                            <div class=" height-100 price-reward-box ">
+                                <div class="black-inner p-0 height-100 ">
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.179" viewBox="0 0 117.712 122.179">
+                                                    <g id="Group_1540" data-name="Group 1540" transform="translate(-228.618 -764.927)">
+                                                      <g id="Group_1260" data-name="Group 1260" transform="translate(44.999 -136.765)">
+                                                        <path id="Path_6252" data-name="Path 6252" d="M535.764,346.271v28.6a1.425,1.425,0,0,1-1.422,1.422H503.57a1.425,1.425,0,0,1-1.422-1.422v-28.6a1.423,1.423,0,0,1,1.422-1.422h30.773A1.423,1.423,0,0,1,535.764,346.271Z" transform="translate(-277.057 607.225)" fill="#00c6fa"/>
+                                                        <path id="Path_6254" data-name="Path 6254" d="M535.423,345.959a1.42,1.42,0,0,1-1.136.56l-37.462-.157a1.421,1.421,0,0,1-1.416-1.427h0l.018-4.181a1.421,1.421,0,0,1,1.427-1.415h0l37.462.157a1.421,1.421,0,0,1,1.416,1.427h0l-.018,4.181A1.414,1.414,0,0,1,535.423,345.959Z" transform="translate(-273.096 610.464)" fill="#00c6fa"/>
+                                                        <g id="Group_1255" data-name="Group 1255" transform="translate(234.334 941.903)">
+                                                          <path id="Path_6246" data-name="Path 6246" d="M539.964,375.223h-4.348a1.405,1.405,0,0,1-1.422-1.385V344.173a1.405,1.405,0,0,1,1.422-1.385h4.348a1.405,1.405,0,0,1,1.422,1.385v29.666a1.405,1.405,0,0,1-1.422,1.385Z" transform="translate(-530.224 -333.466)" fill="#21333b"/>
+                                                          <path id="Path_6247" data-name="Path 6247" d="M531.236,321.646c2.235,1.934,1.529,6.411,1.529,6.411s-4.329,1.34-6.564-.594-1.529-6.411-1.529-6.411S529,319.711,531.236,321.646Z" transform="translate(-524.566 -320.425)" fill="#21333b"/>
+                                                          <path id="Path_6248" data-name="Path 6248" d="M548.958,326.843c-1.927,2.241-6.406,1.549-6.406,1.549s-1.354-4.325.574-6.566,6.406-1.549,6.406-1.549S550.885,324.6,548.958,326.843Z" transform="translate(-534.865 -320.177)" fill="#21333b"/>
+                                                          <rect id="Rectangle_1001" data-name="Rectangle 1001" width="7.526" height="7.191" transform="translate(4.029 15.154) rotate(-89.77)" fill="#21333b"/>
+                                                        </g>
+                                                      </g>
+                                                      <g id="Polygon_309" data-name="Polygon 309" transform="translate(346.33 804.925) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">Price and Rewards</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Token Price</h3>
+                                                <h3 class=" token-rank primary-color font-24">$ 7.61</h3>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Pending Rewards</h3>
+                                                <h3 class=" token-rank primary-color font-24">14.44 BNB</h3>
+
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Team Vesting</h3>
+                                                <h3 class=" token-rank primary-color font-24">71,250 START</h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.178" viewBox="0 0 117.712 122.178">
+                                                    <g id="Group_1541" data-name="Group 1541" transform="translate(-229.335 -1119)">
+                                                      <g id="Polygon_310" data-name="Polygon 310" transform="translate(347.047 1158.998) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                      <path id="Icon_awesome-percent" data-name="Icon awesome-percent" d="M9.025,18.05A9.025,9.025,0,1,0,0,9.025,9.021,9.021,0,0,0,9.025,18.05Zm0-12.893A3.868,3.868,0,1,1,5.157,9.025,3.869,3.869,0,0,1,9.025,5.157Zm18.05,18.05A9.025,9.025,0,1,0,36.1,32.232,9.021,9.021,0,0,0,27.075,23.207Zm0,12.893a3.868,3.868,0,1,1,3.868-3.868A3.869,3.869,0,0,1,27.075,36.1ZM31.612.016,34.158.008a1.934,1.934,0,0,1,1.587,3.046L6.237,40.419a1.93,1.93,0,0,1-1.579.822l-2.691.008A1.934,1.934,0,0,1,.379,38.2L30.033.838A1.93,1.93,0,0,1,31.612.016Z" transform="translate(270.835 1159.5)" fill="#00c6fa" stroke="#00c6fa" stroke-width="1"/>
+                                                    </g>
+                                                  </svg>
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">Platform Fees</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Development</h3>
+                                                <h3 class=" token-rank primary-color font-24">2.00 %</h3>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">START/WBNB Liquidity</h3>
+                                                <h3 class=" token-rank primary-color font-24">1.00 %</h3>
+
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Staking Rewards</h3>
+                                                <h3 class=" token-rank primary-color font-24">0.5 %</h3>
+
+                                            </div>
+
+                                            <div class="col-md-4 pt-4">
+                                                <h3 class="pool-name-detail weigt-500">Buyback & Burn</h3>
+                                                <h3 class=" token-rank primary-color font-24">0.5 %</h3>
+
+                                            </div>
+
+                                            <div class="col-md-4 pt-4">
+                                                <h3 class="pool-name-detail weigt-500">Unstaking Burn</h3>
+                                                <h3 class=" token-rank primary-color font-24">0.5 %</h3>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.178" viewBox="0 0 117.712 122.178">
+                                                    <g id="Group_1542" data-name="Group 1542" transform="translate(-229.335 -1639)">
+                                                      <g id="Polygon_311" data-name="Polygon 311" transform="translate(347.047 1678.998) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                      <path id="Icon_ionic-md-timer" data-name="Icon ionic-md-timer" d="M22.41,36.688a2.378,2.378,0,1,0,2.378-2.378A2.386,2.386,0,0,0,22.41,36.688Zm0-33.313v9.512h4.756V8.327A16.645,16.645,0,1,1,8.131,24.788a16.478,16.478,0,0,1,3.758-10.521l12.9,12.9,3.356-3.356L11.961,7.637v.051A21.366,21.366,0,1,0,24.788,3.375ZM39.066,24.788a2.378,2.378,0,1,0-2.378,2.378A2.386,2.386,0,0,0,39.066,24.788Zm-28.557,0a2.378,2.378,0,1,0,2.378-2.378A2.386,2.386,0,0,0,10.509,24.788Z" transform="translate(263.96 1675.625)" fill="#00c6fa"/>
+                                                    </g>
+                                                  </svg>
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">Minimum Locking Time</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Min. Staking Time</h3>
+                                                <h3 class=" token-rank primary-color font-24">0 Hours 5 Days</h3>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Min. Claim Rewards</h3>
+                                                <h3 class=" token-rank primary-color font-24">7 Days</h3>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="price-reward">
+                        <div class="detail-video-play-section">
+                            <div class=" height-100 price-reward-box ">
+                                <div class="black-inner p-0 height-100 ">
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.178" viewBox="0 0 117.712 122.178">
+                                                    <g id="Group_1543" data-name="Group 1543" transform="translate(-229.335 -2077)">
+                                                      <g id="Polygon_311" data-name="Polygon 311" transform="translate(347.047 2116.998) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                      <g id="Group_1366" data-name="Group 1366" transform="translate(-48.553 1939.174)">
+                                                        <g id="Group_1345" data-name="Group 1345" transform="translate(318.888 181.136)">
+                                                          <g id="Group_1334" data-name="Group 1334" transform="translate(11.563)">
+                                                            <g id="Group_1333" data-name="Group 1333">
+                                                              <path id="Path_6298" data-name="Path 6298" d="M361.754,192.723a6.147,6.147,0,1,1-6.147-6.145A6.148,6.148,0,0,1,361.754,192.723Z" transform="translate(-349.46 -186.578)" fill="#00c6fa"/>
+                                                              <path id="Path_6299" data-name="Path 6299" d="M362.1,193.618a5.6,5.6,0,1,1-5.6-5.6A5.6,5.6,0,0,1,362.1,193.618Z" transform="translate(-350.355 -187.473)" fill="#0092b8"/>
+                                                              <g id="Group_1332" data-name="Group 1332" transform="translate(3.581 1.947)">
+                                                                <g id="Group_1331" data-name="Group 1331">
+                                                                  <g id="Group_1330" data-name="Group 1330">
+                                                                    <path id="Path_6300" data-name="Path 6300" d="M361.934,195.515V193.17c.716.136,1.245.593,1.245,1.135a.44.44,0,0,0,.88,0,2.252,2.252,0,0,0-2.125-2.026v-.114a.439.439,0,1,0-.879,0v.114a2.393,2.393,0,0,0-2.076,1.612,1.727,1.727,0,0,0-.052.414,2.254,2.254,0,0,0,2.128,2.029v2.345c-.719-.137-1.247-.593-1.247-1.137a.441.441,0,0,0-.881,0,2.253,2.253,0,0,0,2.128,2.028v.113a.439.439,0,1,0,.879,0v-.113a2.03,2.03,0,1,0,0-4.055Zm-2.117-1.33a1.41,1.41,0,0,1,1.238-1.016v2.273c-.719-.136-1.247-.593-1.247-1.138A.668.668,0,0,1,359.817,194.186Zm3.362,3.357c0,.543-.529,1-1.245,1.136v-2.272c.714.135,1.242.591,1.245,1.133Zm-1.685-2.058Z" transform="translate(-358.927 -191.726)"/>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                          <g id="Group_1339" data-name="Group 1339" transform="translate(0 2.524)">
+                                                            <g id="Group_1338" data-name="Group 1338">
+                                                              <path id="Path_6301" data-name="Path 6301" d="M326.133,196.873a3.622,3.622,0,1,1-3.622-3.622A3.622,3.622,0,0,1,326.133,196.873Z" transform="translate(-318.888 -193.251)" fill="#00c6fa"/>
+                                                              <path id="Path_6302" data-name="Path 6302" d="M326.337,197.4a3.3,3.3,0,1,1-3.3-3.3A3.3,3.3,0,0,1,326.337,197.4Z" transform="translate(-319.414 -193.779)" fill="#0092b8"/>
+                                                              <g id="Group_1337" data-name="Group 1337" transform="translate(2.11 1.148)">
+                                                                <g id="Group_1336" data-name="Group 1336">
+                                                                  <g id="Group_1335" data-name="Group 1335">
+                                                                    <path id="Path_6303" data-name="Path 6303" d="M326.238,198.518v-1.382c.423.08.735.349.735.669a.259.259,0,1,0,.518,0,1.329,1.329,0,0,0-1.253-1.194v-.067a.259.259,0,0,0-.518,0v.067a1.409,1.409,0,0,0-1.222.951.97.97,0,0,0-.031.244,1.327,1.327,0,0,0,1.253,1.2v1.382c-.423-.08-.734-.349-.734-.67a.259.259,0,1,0-.519,0,1.327,1.327,0,0,0,1.253,1.195v.067a.259.259,0,1,0,.518,0v-.067a1.2,1.2,0,1,0,0-2.389Zm-1.247-.784a.831.831,0,0,1,.729-.6v1.339c-.423-.08-.734-.35-.734-.67A.434.434,0,0,1,324.991,197.735Zm1.982,1.978c0,.32-.312.59-.735.669v-1.339c.422.08.733.348.735.668Zm-.993-1.213Z" transform="translate(-324.467 -196.285)"/>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                          <g id="Group_1415" data-name="Group 1415" transform="translate(28.177 2.524)">
+                                                            <g id="Group_1338-2" data-name="Group 1338">
+                                                              <path id="Path_6301-2" data-name="Path 6301" d="M326.133,196.873a3.622,3.622,0,1,1-3.622-3.622A3.622,3.622,0,0,1,326.133,196.873Z" transform="translate(-318.888 -193.251)" fill="#00c6fa"/>
+                                                              <path id="Path_6302-2" data-name="Path 6302" d="M326.337,197.4a3.3,3.3,0,1,1-3.3-3.3A3.3,3.3,0,0,1,326.337,197.4Z" transform="translate(-319.414 -193.779)" fill="#0092b8"/>
+                                                              <g id="Group_1337-2" data-name="Group 1337" transform="translate(2.11 1.148)">
+                                                                <g id="Group_1336-2" data-name="Group 1336">
+                                                                  <g id="Group_1335-2" data-name="Group 1335">
+                                                                    <path id="Path_6303-2" data-name="Path 6303" d="M326.238,198.518v-1.382c.423.08.735.349.735.669a.259.259,0,1,0,.518,0,1.329,1.329,0,0,0-1.253-1.194v-.067a.259.259,0,0,0-.518,0v.067a1.409,1.409,0,0,0-1.222.951.97.97,0,0,0-.031.244,1.327,1.327,0,0,0,1.253,1.2v1.382c-.423-.08-.734-.349-.734-.67a.259.259,0,1,0-.519,0,1.327,1.327,0,0,0,1.253,1.195v.067a.259.259,0,1,0,.518,0v-.067a1.2,1.2,0,1,0,0-2.389Zm-1.247-.784a.831.831,0,0,1,.729-.6v1.339c-.423-.08-.734-.35-.734-.67A.434.434,0,0,1,324.991,197.735Zm1.982,1.978c0,.32-.312.59-.735.669v-1.339c.422.08.733.348.735.668Zm-.993-1.213Z" transform="translate(-324.467 -196.285)"/>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </g>
+                                                        <g id="Group_1365" data-name="Group 1365" transform="translate(327.132 177.826)">
+                                                          <g id="Group_1358" data-name="Group 1358" transform="translate(0)">
+                                                            <path id="Path_6307" data-name="Path 6307" d="M355.321,242.9l1.443,13.251a32.96,32.96,0,0,1,10.224,2.833,24.27,24.27,0,0,0,2.547-1.006l4.32-4.144c-.629-2.325-7.748-11.329-7.748-11.329Z" transform="translate(-349.785 -218.039)" fill="#0092b8"/>
+                                                            <g id="Group_1353" data-name="Group 1353">
+                                                              <g id="Group_1352" data-name="Group 1352">
+                                                                <g id="Group_1351" data-name="Group 1351">
+                                                                  <g id="Group_1350" data-name="Group 1350">
+                                                                    <rect id="Rectangle_1026" data-name="Rectangle 1026" width="2.114" height="8.192" transform="translate(8.48 17.92) rotate(-0.991)" fill="#fff"/>
+                                                                    <g id="Group_1349" data-name="Group 1349">
+                                                                      <g id="Group_1348" data-name="Group 1348">
+                                                                        <g id="Group_1347" data-name="Group 1347">
+                                                                          <g id="Group_1346" data-name="Group 1346">
+                                                                            <path id="Path_6308" data-name="Path 6308" d="M350.209,196.59a9.382,9.382,0,1,1,9.239-9.525A9.391,9.391,0,0,1,350.209,196.59Zm-.259-17.057a7.677,7.677,0,1,0,7.791,7.557A7.687,7.687,0,0,0,349.95,179.533Z" transform="translate(-340.684 -177.826)" fill="#fff"/>
+                                                                          </g>
+                                                                        </g>
+                                                                      </g>
+                                                                    </g>
+                                                                    <path id="Path_6309" data-name="Path 6309" d="M362.4,255l3.049-.051-.177-13.3-3.052.056Z" transform="translate(-354.077 -217.506)" fill="#fff"/>
+                                                                    <path id="Path_6310" data-name="Path 6310" d="M367.032,204.64a7.169,7.169,0,0,1-3.935,2.074,4.821,4.821,0,0,0,5.887-6.07A7.151,7.151,0,0,1,367.032,204.64Z" transform="translate(-354.62 -192.014)" fill="#fff"/>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                            <g id="Group_1354" data-name="Group 1354" transform="translate(3.555 23.505)">
+                                                              <path id="Path_6311" data-name="Path 6311" d="M355.257,243.889a1.707,1.707,0,0,0,1.85-1.552h0a1.705,1.705,0,0,0-1.552-1.851l-3.615-.508a1.706,1.706,0,0,0-1.85,1.552h0a1.709,1.709,0,0,0,1.553,1.851Z" transform="translate(-350.084 -239.97)" fill="#00c6fa"/>
+                                                            </g>
+                                                            <g id="Group_1355" data-name="Group 1355" transform="translate(3.385 27.496)">
+                                                              <path id="Path_6312" data-name="Path 6312" d="M355.205,253.926a1.707,1.707,0,0,0,1.469-1.917h0a1.707,1.707,0,0,0-1.917-1.47l-3.639.289a1.708,1.708,0,0,0-1.47,1.918h0a1.713,1.713,0,0,0,1.919,1.471Z" transform="translate(-349.634 -250.524)" fill="#00c6fa"/>
+                                                            </g>
+                                                            <g id="Group_1356" data-name="Group 1356" transform="translate(4.277 30.938)">
+                                                              <path id="Path_6313" data-name="Path 6313" d="M357.732,262.973a1.709,1.709,0,0,0,1.163-2.118h0a1.706,1.706,0,0,0-2.118-1.163l-3.552.835a1.707,1.707,0,0,0-1.163,2.118h0a1.71,1.71,0,0,0,2.118,1.163Z" transform="translate(-351.993 -259.624)" fill="#00c6fa"/>
+                                                            </g>
+                                                            <g id="Group_1357" data-name="Group 1357" transform="translate(6.034 34.379)">
+                                                              <path id="Path_6314" data-name="Path 6314" d="M360.962,271.468a1.391,1.391,0,0,0,1.046-1.665h0a1.391,1.391,0,0,0-1.665-1.046l-2.625.982a1.389,1.389,0,0,0-1.045,1.666h0a1.391,1.391,0,0,0,1.666,1.045Z" transform="translate(-356.637 -268.721)" fill="#00c6fa"/>
+                                                            </g>
+                                                          </g>
+                                                          <g id="Group_1361" data-name="Group 1361" transform="translate(6.504 20.132)">
+                                                            <g id="Group_1360" data-name="Group 1360">
+                                                              <g id="Group_1359" data-name="Group 1359">
+                                                                <path id="Path_6315" data-name="Path 6315" d="M364.13,234.76l-2.055-.643-1.531,1.6a1.436,1.436,0,0,1-2.146.269,1.677,1.677,0,0,1-.053-2.375l2.054-2.148s.227-.275,1.157-.4c1.179-.156,6.223,1.863,6.223,1.863a1.672,1.672,0,0,1,.836,1.158,1.429,1.429,0,0,1,.057.141l2.7,5.856a2.294,2.294,0,0,1-.023,1.379,5.59,5.59,0,0,1-3.7,4.46c-2.265.667-3.275-.151-4.151-3.136C362.661,239.933,364.124,234.852,364.13,234.76Z" transform="translate(-357.879 -231.052)" fill="#fdc00f"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                          <g id="Group_1364" data-name="Group 1364" transform="translate(6.504 20.132)">
+                                                            <g id="Group_1363" data-name="Group 1363">
+                                                              <g id="Group_1362" data-name="Group 1362">
+                                                                <path id="Path_6316" data-name="Path 6316" d="M364.13,234.76l-2.055-.643-1.531,1.6a1.436,1.436,0,0,1-2.146.269,1.677,1.677,0,0,1-.053-2.375l2.054-2.148s.227-.275,1.157-.4c1.179-.156,6.223,1.863,6.223,1.863a1.672,1.672,0,0,1,.836,1.158,1.429,1.429,0,0,1,.057.141l2.7,5.856a2.294,2.294,0,0,1-.023,1.379,5.59,5.59,0,0,1-3.7,4.46c-2.265.667-3.275-.151-4.151-3.136C362.661,239.933,364.124,234.852,364.13,234.76Z" transform="translate(-357.879 -231.052)" fill="#00c6fa"/>
+                                                              </g>
+                                                            </g>
+                                                          </g>
+                                                        </g>
+                                                        <rect id="Rectangle_1027" data-name="Rectangle 1027" width="10.655" height="1.365" transform="matrix(0.707, -0.707, 0.707, 0.707, 341.943, 217.863)" fill="#fff"/>
+                                                        <path id="Path_6317" data-name="Path 6317" d="M389.062,265.175l-7.84,7.84.48.48a24.534,24.534,0,0,0,10.153-5.528Z" transform="translate(-38.758 -54.311)" fill="#14b0bf"/>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">Qualify Rewards Balance</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Minimum</h3>
+                                                <h3 class=" token-rank primary-color font-24">1250 START</h3>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Maximum</h3>
+                                                <h3 class=" token-rank primary-color font-24">20000 START</h3>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.178" viewBox="0 0 117.712 122.178">
+                                                    <g id="Group_1544" data-name="Group 1544" transform="translate(-229.335 -2399.021)">
+                                                      <g id="Polygon_311" data-name="Polygon 311" transform="translate(347.047 2439.02) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                      <g id="Group_1412" data-name="Group 1412" transform="translate(101.179 2256.669)">
+                                                        <path id="Path_6344" data-name="Path 6344" d="M229.83,210.4a1.15,1.15,0,0,1,.26-.722c.232-.937.487-2.095.761-3.533a1.055,1.055,0,0,1-.022-.2,1.143,1.143,0,0,1,.169-.589c.254-1.409.408-2.58.492-3.537a1.155,1.155,0,0,1-.276-.742,1.167,1.167,0,0,1,.358-.836c.024-2.185-.415-2.691-.415-2.691-1.78-.95-6.28.192-8.257-.185-.665-.129-2.163-.415-2.475-1-.615-1.146.618-3.811.493-5.11a9.1,9.1,0,0,0-1.581-3.852c-.36-.406-.806-1.071-1.345-1.063a1.217,1.217,0,0,0-.485.155,1.83,1.83,0,0,0-.692.554c-.588,1.011.212,3.554-.123,4.673a18.187,18.187,0,0,1-3.564,5.666,14.471,14.471,0,0,1-2.025,1.316v14.314a8.316,8.316,0,0,1,1.929,0c3.426.966,12.575,1.707,15.855.318a11.285,11.285,0,0,0,.965-2.73A1.08,1.08,0,0,1,229.83,210.4Z" transform="translate(-29.586 0)" fill="#0092b8"/>
+                                                        <g id="Group_1411" data-name="Group 1411" transform="translate(192.447 197.242)">
+                                                          <path id="Path_6345" data-name="Path 6345" d="M248.239,214.27a1.831,1.831,0,0,1-1.539,2.081l-5.742.828a1.83,1.83,0,0,1-2.081-1.538h0a1.83,1.83,0,0,1,1.538-2.08l5.742-.828a1.831,1.831,0,0,1,2.082,1.538Z" transform="translate(-238.308 -212.711)" fill="#00c6fa"/>
+                                                          <path id="Path_6346" data-name="Path 6346" d="M248.067,224.837a1.933,1.933,0,0,1-1.809,2.049l-6.132.23a1.932,1.932,0,0,1-2.048-1.808h0a1.932,1.932,0,0,1,1.808-2.049l6.133-.231a1.932,1.932,0,0,1,2.049,1.808Z" transform="translate(-237.849 -218.76)" fill="#00c6fa"/>
+                                                          <path id="Path_6347" data-name="Path 6347" d="M247.793,235.27a1.884,1.884,0,0,1-1.93,1.836l-5.955-.412a1.882,1.882,0,0,1-1.835-1.929h0A1.882,1.882,0,0,1,240,232.929l5.956.412a1.882,1.882,0,0,1,1.836,1.928Z" transform="translate(-237.848 -224.566)" fill="#00c6fa"/>
+                                                          <path id="Path_6348" data-name="Path 6348" d="M245.9,244.4a1.656,1.656,0,0,1-1.772,1.532l-5.064-.694a1.656,1.656,0,0,1-1.532-1.772h0a1.655,1.655,0,0,1,1.771-1.532l5.063.694A1.656,1.656,0,0,1,245.9,244.4Z" transform="translate(-237.529 -229.846)" fill="#00c6fa"/>
+                                                        </g>
+                                                        <path id="Path_6349" data-name="Path 6349" d="M220.424,196.356c-.615-1.146.618-3.811.493-5.11a9.1,9.1,0,0,0-1.581-3.852c-.36-.406-.806-1.071-1.345-1.063a1.217,1.217,0,0,0-.485.155,1.83,1.83,0,0,0-.692.554c-.588,1.011.212,3.554-.123,4.673a18.187,18.187,0,0,1-3.564,5.666,14.471,14.471,0,0,1-2.025,1.316v8.725a6.583,6.583,0,0,0,3.214.857c4.275,0,7.377-4.06,7.377-9.257A11.814,11.814,0,0,0,220.424,196.356Z" transform="translate(-29.586 0)" fill="#00c6fa"/>
+                                                        <rect id="Rectangle_1033" data-name="Rectangle 1033" width="1.421" height="15.082" transform="translate(181.078 198.11)"/>
+                                                        <path id="Path_6350" data-name="Path 6350" d="M160.648,218.561c0,4.182,1.79,8.142,4.982,11.672h34.2V214.462h-38.6A14.834,14.834,0,0,0,160.648,218.561Z" transform="translate(-18.266 -16.496)" fill="#00c6fa"/>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">IDOs</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Total IDOs</h3>
+                                                <h3 class=" token-rank primary-color font-24">144 Projects</h3>
+
+                                            </div>
+
+
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">Min Stake</h3>
+                                                <h3 class=" token-rank primary-color font-24">50 START</h3>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="reward-section-1">
+                                        <div class="d-flex">
+                                            <div class="pool-detail-logo ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="117.712" height="122.178" viewBox="0 0 117.712 122.178">
+                                                    <g id="Group_1545" data-name="Group 1545" transform="translate(-229.335 -2746)">
+                                                      <g id="Polygon_311" data-name="Polygon 311" transform="translate(347.047 2785.998) rotate(119)" fill="none">
+                                                        <path d="M70.471,0l23.49,41.251L70.471,82.5H23.49L0,41.251,23.49,0Z" stroke="none"/>
+                                                        <path d="M 25.23432159423828 2.999992370605469 L 3.452308654785156 41.25133895874023 L 25.23432159423828 79.502685546875 L 68.72705841064453 79.502685546875 L 90.50907135009766 41.25133895874023 L 68.72705841064453 2.999992370605469 L 25.23432159423828 2.999992370605469 M 23.49034881591797 -7.62939453125e-06 L 70.47103118896484 -7.62939453125e-06 L 93.96137237548828 41.25133895874023 L 70.47103118896484 82.502685546875 L 23.49034881591797 82.502685546875 L 7.62939453125e-06 41.25133895874023 L 23.49034881591797 -7.62939453125e-06 Z" stroke="none" fill="#00c6fa"/>
+                                                      </g>
+                                                      <g id="Group_1414" data-name="Group 1414" transform="translate(-12103.237 902.469)">
+                                                        <g id="Group_1393" data-name="Group 1393" transform="translate(12376.572 1879.531)">
+                                                          <g id="Group_1392" data-name="Group 1392" transform="translate(0 0)">
+                                                            <g id="Group_1390" data-name="Group 1390">
+                                                              <rect id="Rectangle_1029" data-name="Rectangle 1029" width="30.513" height="15.978" fill="#19aabb"/>
+                                                              <g id="Group_1384" data-name="Group 1384" transform="translate(1.489 1.403)">
+                                                                <g id="Group_1383" data-name="Group 1383">
+                                                                  <g id="Group_1382" data-name="Group 1382">
+                                                                    <path id="Path_6324" data-name="Path 6324" d="M75.643,202.278v-6.565a3.305,3.305,0,0,1-3.305-3.3H51.414a3.3,3.3,0,0,1-3.3,3.3v6.565a3.3,3.3,0,0,1,3.3,3.3H72.338A3.305,3.305,0,0,1,75.643,202.278Z" transform="translate(-48.11 -192.409)" fill="#077277"/>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                              <path id="Path_6325" data-name="Path 6325" d="M75.5,199c0,3.637-2.511,6.586-5.608,6.586s-5.608-2.949-5.608-6.586,2.511-6.586,5.608-6.586S75.5,195.358,75.5,199Z" transform="translate(-54.639 -191.006)" fill="#19aabb"/>
+                                                              <g id="Group_1389" data-name="Group 1389" transform="translate(11.861 2.433)">
+                                                                <g id="Group_1388" data-name="Group 1388">
+                                                                  <g id="Group_1387" data-name="Group 1387">
+                                                                    <g id="Group_1386" data-name="Group 1386">
+                                                                      <g id="Group_1385" data-name="Group 1385">
+                                                                        <path id="Path_6326" data-name="Path 6326" d="M72.653,199.465v-3.1c.948.179,1.648.784,1.648,1.5a.582.582,0,0,0,1.164,0,2.983,2.983,0,0,0-2.812-2.684v-.149a.583.583,0,0,0-1.166,0v.149a3.169,3.169,0,0,0-2.745,2.135,2.231,2.231,0,0,0-.068.549,2.982,2.982,0,0,0,2.813,2.683v3.1c-.949-.18-1.648-.784-1.648-1.5a.583.583,0,0,0-1.165,0,2.981,2.981,0,0,0,2.813,2.684v.15a.583.583,0,0,0,1.166,0v-.149a2.687,2.687,0,1,0,0-5.367Zm-2.8-1.76a1.866,1.866,0,0,1,1.637-1.344v3.007c-.949-.179-1.648-.785-1.648-1.5A1.2,1.2,0,0,1,69.851,197.705Zm4.45,4.442c0,.719-.7,1.325-1.648,1.5v-3.007c.946.18,1.644.783,1.648,1.5Zm-2.231-2.724Z" transform="translate(-68.675 -194.45)" fill="#077277"/>
+                                                                      </g>
+                                                                    </g>
+                                                                  </g>
+                                                                </g>
+                                                              </g>
+                                                            </g>
+                                                            <g id="Group_1391" data-name="Group 1391" transform="translate(8.183 11.134)">
+                                                              <path id="Path_6327" data-name="Path 6327" d="M72.051,213.368a1.663,1.663,0,0,1,1.665-1.666h0a1.664,1.664,0,0,1,1.665,1.666v10.555a1.663,1.663,0,0,1-1.665,1.665h0a1.667,1.667,0,0,1-1.667-1.665Z" transform="translate(-66.669 -211.702)" fill="#00c6fa"/>
+                                                              <path id="Path_6328" data-name="Path 6328" d="M79.483,227.133a1.664,1.664,0,0,1,1.666-1.666h0a1.664,1.664,0,0,1,1.665,1.666v10.555a1.666,1.666,0,0,1-1.666,1.666h0a1.666,1.666,0,0,1-1.666-1.666Z" transform="translate(-70.353 -218.525)" fill="#00c6fa"/>
+                                                              <path id="Path_6329" data-name="Path 6329" d="M86.912,230.353a1.664,1.664,0,0,1,1.666-1.665h0a1.666,1.666,0,0,1,1.667,1.666v10.555a1.663,1.663,0,0,1-1.665,1.666h0a1.667,1.667,0,0,1-1.667-1.666Z" transform="translate(-74.036 -220.121)" fill="#00c6fa"/>
+                                                              <path id="Path_6330" data-name="Path 6330" d="M94.221,233.946a1.664,1.664,0,0,1,1.666-1.666h0a1.666,1.666,0,0,1,1.666,1.666V244.5a1.665,1.665,0,0,1-1.666,1.665h0a1.668,1.668,0,0,1-1.666-1.666Z" transform="translate(-77.658 -221.901)" fill="#00c6fa"/>
+                                                              <path id="Path_6331" data-name="Path 6331" d="M82.068,243.019a71.162,71.162,0,0,0-.792-7.725L70.027,233.5l-3.265,1.106s0,4.426-.733,6.363c-.321.846-.95-1.761-1.065-2.261.082-.631-.1-3.367-.1-3.367a1.786,1.786,0,0,0-1.843-2.079c-.99-.057-1.366.38-1.284,1.368l.161,2.192a23.516,23.516,0,0,1-.457,3.445,7.249,7.249,0,0,0,.754,4.208c.675,2.175,2.429,6.461,4.264,7.364,1.606.786,2.1,5.478,2.1,5.478l10.621-.063S82.238,246.3,82.068,243.019Z" transform="translate(-61.381 -222.386)" fill="#00c6fa"/>
+                                                            </g>
+                                                          </g>
+                                                          <path id="Path_6357" data-name="Path 6357" d="M0,0H11.95V2.314H0Z" transform="translate(14.741 43.895)"/>
+                                                          <path id="Path_6332" data-name="Path 6332" d="M73.18,283.364a32.906,32.906,0,0,0,12.848-.06v-4.836H73.18Z" transform="translate(-59.047 -233.661)" fill="#14b0bf"/>
+                                                        </g>
+                                                      </g>
+                                                    </g>
+                                                  </svg>
+
+
+
+
+                                            </div>
+                                            <div class="align-self-center ">
+                                                <h3 class="pool-name-detail ml-2 font-bold font-40 ">Minimum Investment</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="row pt-3">
+                                            <div class="col-md-6">
+                                                <h3 class="pool-name-detail weigt-500">For Guaranteed Allocation</h3>
+                                                <h3 class=" token-rank primary-color font-24">500 START</h3>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3 class="pool-name-detail weigt-500">For FCFS Allocation</h3>
+                                                <h3 class=" token-rank primary-color font-24">50 START</h3>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <div class=" ">
+
+
+
+        <section class=" subscribe pool-subscribe ">
+
+            <div class="pt-5 pb-5 ">
+                <div class="container pb-4 ">
+                    <div class="subs-eclip ">
+                        <img style="top: 3rem; " src="./images/Polygon 201.png " alt=" ">
+
+
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 align-self-center ">
+                            <img style="width: 60% " src="./images/subscribe-polygon.png " alt=" ">
+                        </div>
+                        <div class="col-md-7 ">
+                            <div class="d-flex ">
+                                <div>
+                                    <p class="get-more ">
+                                        Get More Updates
+                                    </p>
+                                    <h4 class="subscribe-text ">
+                                        Subscribe Our Newsletters
+                                    </h4>
+                                </div>
+                                <div class="align-self-start subs-email ">
+                                    <img src="./images/subs-email.png " alt=" ">
+                                </div>
+                            </div>
+                            <div class=" subscribe-input ">
+
+                                <input type="text " class="form-control " placeholder="Recipient 's username">
+                                <div class="input-subs-badge">
+                                    <span>
+                                        Suscribe 
+                                    </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16.846" height="17.964" viewBox="0 0 16.846 17.964">
+                                            <g id="Group_1540" data-name="Group 1540" transform="translate(-1612.589 -4617.437)">
+                                              <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M18.421,15.175l-6.8-6.792a1.278,1.278,0,0,1,0-1.813,1.3,1.3,0,0,1,1.818,0l7.7,7.7a1.281,1.281,0,0,1,.037,1.77l-7.734,7.75a1.284,1.284,0,0,1-1.818-1.813Z" transform="translate(1601.343 4611.24)" fill="#fff"/>
+                                              <path id="Icon_ionic-ios-arrow-forward-2" data-name="Icon ionic-ios-arrow-forward" d="M18.421,15.175l-6.8-6.792a1.278,1.278,0,0,1,0-1.813,1.3,1.3,0,0,1,1.818,0l7.7,7.7a1.281,1.281,0,0,1,.037,1.77l-7.734,7.75a1.284,1.284,0,0,1-1.818-1.813Z" transform="translate(1607.917 4611.24)" fill="#fff"/>
+                                            </g>
+                                          </svg>
+                                          
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer">
+            <div class="footer-bg-1">
+                <img src="./images/footer-polygon.png" alt="">
+
+            </div>
+            <div class="footer-bg-2">
+                <img src="./images/Shape.png" alt="">
+
+            </div>
+            <div class="footer-side-poly">
+                <img src="./images/Polygon.png" alt="">
+            </div>
+            <div class="footer-side-poly-2">
+                <img src="./images/footer-side-2.png" alt="">
+            </div>
+            <div class="inner-footer">
+                <div class="container position-relative">
+                    <div class="footer-dot">
+                        <img src="./images/dots.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 align-self-center">
+                            <img class="footer-logo" src="./images/footer-logo.png" alt="">
+                        </div>
+                        <div class="col-md-3 align-self-center">
+                            <h3 class="footer-heading">Connect with us</h3>
+                            <div class="footer-link-icon">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.401" height="47.945" viewBox="0 0 48.401 47.945">
+                                        <g id="Group_1541" data-name="Group 1541" transform="translate(-193.2 -90.445)">
+                                          <path id="Ellipse_3" data-name="Ellipse 3" d="M24.2,0A23.974,23.974,0,1,1,0,23.972,24.087,24.087,0,0,1,24.2,0Z" transform="translate(193.2 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M12.994,0,9.754,0c-3.639,0-5.99,2.421-5.99,6.165V9.01H.509A.508.508,0,0,0,0,9.519v4.123a.508.508,0,0,0,.509.509H3.764V24.544a.512.512,0,0,0,.509.514H8.521a.509.509,0,0,0,.509-.514V14.152h3.809a.511.511,0,0,0,.509-.509V9.519A.505.505,0,0,0,13.2,9.16a.531.531,0,0,0-.364-.15H9.03V6.6c0-1.158.275-1.747,1.782-1.747h2.181a.511.511,0,0,0,.509-.509V.519A.512.512,0,0,0,12.994,0Z" transform="translate(210.557 101.641)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.401" height="47.945" viewBox="0 0 48.401 47.945">
+                                        <g id="Group_1542" data-name="Group 1542" transform="translate(-257.091 -90.445)">
+                                          <path id="Ellipse_3_copy" data-name="Ellipse 3 copy" d="M24.2,0A23.974,23.974,0,1,1,0,23.972,24.087,24.087,0,0,1,24.2,0Z" transform="translate(257.091 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M32.077,2.965a14.045,14.045,0,0,1-3.789,1A6.32,6.32,0,0,0,31.179.469,13.558,13.558,0,0,1,27.01,2a6.713,6.713,0,0,0-4.8-2,6.45,6.45,0,0,0-6.574,6.325,6.205,6.205,0,0,0,.155,1.443A18.877,18.877,0,0,1,2.236,1.153a6.176,6.176,0,0,0-.9,3.195A6.273,6.273,0,0,0,4.253,9.6a6.716,6.716,0,0,1-2.97-.779V8.9a6.421,6.421,0,0,0,5.271,6.21,6.881,6.881,0,0,1-1.727.21,6.032,6.032,0,0,1-1.243-.11,6.608,6.608,0,0,0,6.145,4.4,13.52,13.52,0,0,1-8.152,2.7A12.638,12.638,0,0,1,0,22.218a19.054,19.054,0,0,0,10.088,2.84A18.215,18.215,0,0,0,28.8,7.068c0-.28-.01-.549-.025-.819A12.821,12.821,0,0,0,32.077,2.965Z" transform="translate(265.376 101.641)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.453" height="47.945" viewBox="0 0 48.453 47.945">
+                                        <g id="Group_1543" data-name="Group 1543" transform="translate(-319.991 -90.445)">
+                                          <path id="Ellipse_3_copy_3" data-name="Ellipse 3 copy 3" d="M24.227,0A24.1,24.1,0,0,1,48.453,23.972,24.1,24.1,0,0,1,24.227,47.945,24.1,24.1,0,0,1,0,23.972,24.1,24.1,0,0,1,24.227,0Z" transform="translate(319.991 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M7.911,25.055A7.875,7.875,0,0,1,0,17.225V7.831A7.875,7.875,0,0,1,7.911,0h9.5a7.875,7.875,0,0,1,7.911,7.831v9.394a7.875,7.875,0,0,1-7.911,7.831ZM2.377,7.831v9.394a5.514,5.514,0,0,0,5.535,5.481h9.5a5.517,5.517,0,0,0,5.535-5.481V7.831A5.514,5.514,0,0,0,17.413,2.35h-9.5A5.512,5.512,0,0,0,2.377,7.831Zm3.954,4.7a6.333,6.333,0,1,1,6.33,6.263A6.3,6.3,0,0,1,6.33,12.53Zm2.377,0A3.956,3.956,0,1,0,12.66,8.612,3.942,3.942,0,0,0,8.707,12.53ZM18.626,5.8a.842.842,0,1,1,.845.831A.836.836,0,0,1,18.626,5.8Z" transform="translate(331.147 101.643)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48.453" height="47.945" viewBox="0 0 48.453 47.945">
+                                        <g id="Group_1544" data-name="Group 1544" transform="translate(-384.352 -90.445)">
+                                          <path id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" d="M24.227,0A24.1,24.1,0,0,1,48.453,23.972,24.1,24.1,0,0,1,24.227,47.945,24.1,24.1,0,0,1,0,23.972,24.1,24.1,0,0,1,24.227,0Z" transform="translate(384.352 90.445)" fill="#00c7fb"/>
+                                          <path id="Forma_1" data-name="Forma 1" d="M19.655,25.055V14.093c-1.8-4.331-6.083,1.563-6.083,1.563v9.4H7.911V7.831h5.661v3.289a7.9,7.9,0,0,1,6.083-3.289,5.228,5.228,0,0,1,1.02.1c.076.018.153.027.229.045l.18.054a5.605,5.605,0,0,1,4.232,5.4V25.055ZM0,25.055V7.831H5.661V25.055ZM0,2.74A2.754,2.754,0,0,1,2.767,0,2.755,2.755,0,0,1,5.539,2.74a2.755,2.755,0,0,1-2.772,2.74A2.754,2.754,0,0,1,0,2.74Z" transform="translate(396.361 101.643)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+
+                            <div class="about-us-link">
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Work</a></li>
+                                    <li><a href="#">Our Clients</a></li>
+
+                                    <li><a href="#">Technology</a></li>
+
+                                    <li><a href="#">Help & Support</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1545" data-name="Group 1545" transform="translate(-329.2 -59.324)">
+                                          <path id="Ellipse_4" data-name="Ellipse 4" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 59.324)" fill="#00c7fb"/>
+                                          <path id="phone" d="M17.733,13.861a.841.841,0,0,1-.264.744l-2.5,2.456a1.4,1.4,0,0,1-.441.317,1.934,1.934,0,0,1-.536.169l-.113.009c-.062.006-.142.009-.243.009a8.412,8.412,0,0,1-3.11-.717A16.644,16.644,0,0,1,7.91,15.425a19.506,19.506,0,0,1-3.119-2.607,20.505,20.505,0,0,1-2.177-2.456A17.551,17.551,0,0,1,1.224,8.194a11.711,11.711,0,0,1-.791-1.8,9.47,9.47,0,0,1-.355-1.4A4.41,4.41,0,0,1,0,4.073c.012-.222.018-.347.018-.37a1.7,1.7,0,0,1,.169-.53,1.435,1.435,0,0,1,.32-.438L3.008.261A.827.827,0,0,1,3.609,0a.693.693,0,0,1,.432.139,1.315,1.315,0,0,1,.32.344L6.37,4.26a.9.9,0,0,1,.095.652,1.172,1.172,0,0,1-.32.6l-.921.912a.313.313,0,0,0-.065.118.487.487,0,0,0-.027.142,3.193,3.193,0,0,0,.338.892,8.133,8.133,0,0,0,.693,1.087A12.312,12.312,0,0,0,7.5,10.14,12.781,12.781,0,0,0,9,11.47a8.366,8.366,0,0,0,1.1.7,2.753,2.753,0,0,0,.675.27l.234.047a.451.451,0,0,0,.121-.027.347.347,0,0,0,.121-.065l1.072-1.081a1.155,1.155,0,0,1,.788-.3.958.958,0,0,1,.507.113h.021l3.623,2.121A.932.932,0,0,1,17.733,13.861Z" transform="translate(337.061 67.378)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">+000 123 456 7890
+                                    </p>
+                                    <p class="footer-sociel-contact">+000 123 456 7890
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1546" data-name="Group 1546" transform="translate(-329.2 -123.971)">
+                                          <path id="Ellipse_4_copy" data-name="Ellipse 4 copy" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 123.971)" fill="#00c7fb"/>
+                                          <path id="gmail" d="M1.128,11.4a1.133,1.133,0,0,1-.773-.309L5.913,6.252,7.857,7.98,9.8,6.252l5.553,4.836a1.133,1.133,0,0,1-.773.309Zm9.158-5.609L15.711,1V10.47ZM0,1,5.423,5.788,0,10.47ZM.354.312A1.128,1.128,0,0,1,1.128,0H14.581a1.127,1.127,0,0,1,.776.309l-7.5,6.529Z" transform="translate(337.817 136.347)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">yourgmail@name.com
+
+                                    </p>
+                                    <p class="footer-sociel-contact">www.websitename.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="footer-sociel-icon">
+                                <div class="align-self-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34.363" height="34.363" viewBox="0 0 34.363 34.363">
+                                        <g id="Group_1546" data-name="Group 1546" transform="translate(-329.2 -123.971)">
+                                          <path id="Ellipse_4_copy" data-name="Ellipse 4 copy" d="M17.16,0A17.181,17.181,0,1,1,0,17.2,17.181,17.181,0,0,1,17.16,0Z" transform="translate(329.2 123.971)" fill="#00c7fb"/>
+                                          <path id="gmail" d="M1.128,11.4a1.133,1.133,0,0,1-.773-.309L5.913,6.252,7.857,7.98,9.8,6.252l5.553,4.836a1.133,1.133,0,0,1-.773.309Zm9.158-5.609L15.711,1V10.47ZM0,1,5.423,5.788,0,10.47ZM.354.312A1.128,1.128,0,0,1,1.128,0H14.581a1.127,1.127,0,0,1,.776.309l-7.5,6.529Z" transform="translate(337.817 136.347)" fill="#061737"/>
+                                        </g>
+                                      </svg>
+
+                                </div>
+                                <div>
+                                    <p class="footer-sociel-contact">youtube.com
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js " integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="anonymous "></script>
+</body>
+
+</html>
