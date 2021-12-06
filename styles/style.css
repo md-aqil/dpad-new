@@ -3,6 +3,8 @@
     --white: #ffffff;
     --primary: #00BDF0;
     --secondary: #001c2c;
+    --green: #039f0d;
+    --red: #f00;
 }
 
 * {
@@ -1770,6 +1772,7 @@ body {
     padding: 0.8rem;
     position: relative;
     overflow: hidden;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .active-vote-now {
@@ -1801,9 +1804,208 @@ body {
 
 .text-vote-box>p {
     font-weight: normal;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    line-height: 33.61px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 23.61px;
     text-align: left;
     color: #fff;
+}
+
+.yes-switch .text-switch {
+    font-weight: normal;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    align-self: center;
+    border-left: none;
+    padding: 0.3rem 2rem;
+    border-radius: 8px;
+    margin-left: -26px;
+}
+
+.yes-switch {
+    background-image: url('../images/Union\ 16.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.yes-switch .play-switch {
+    /* border: 2px solid #039f0d; */
+    border-right: none;
+    border-radius: 58px;
+    border-top-left-radius: 58px;
+    border-top-right-radius: 58px;
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+    padding: 5px;
+}
+
+.yes-switch .play-switch svg {
+    width: 70px;
+    height: 70px;
+}
+
+.no-switch {
+    background-image: url('../images/Union\ 17.png');
+}
+
+.no-switch .text-switch {
+    margin-left: -14px;
+    margin-right: -24.4px;
+}
+
+.voting-switches {
+    margin-left: 4rem;
+}
+
+.voting-switches h2 {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.visit-pool {
+    font-family: Lora;
+    font-weight: 500;
+    font-size: 28px;
+    position: relative;
+    letter-spacing: 0.07em;
+    color: #00c6fa;
+    border: 3px solid #00c6fa;
+    border-radius: 9px;
+    text-transform: uppercase;
+    padding: 0.4rem 0rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.visit-pool::before {
+    top: -3px;
+    height: 110%;
+    width: 100px;
+    content: '';
+    left: -3px;
+    position: absolute;
+    border-radius: 7px;
+    background: linear-gradient( 90deg, rgba(71, 78, 241, 1) 2%, rgba(0, 198, 250, 1) 51%);
+}
+
+.go-for-vote {
+    width: 10%;
+    position: relative;
+    /* border: 1px solid blue; */
+    /* background: blue; */
+    background-image: url('../images/Path\ 6368.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vote-percentage {
+    width: 89%;
+    margin-right: 0.6rem;
+    position: relative;
+}
+
+.vote-percentage .voting-switches {
+    margin-left: 2rem;
+}
+
+.vote-percentage {
+    background: black;
+}
+
+.go-for-vote h2 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #00c6fa;
+}
+
+.vertically-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-40%);
+    left: 20%;
+}
+
+.switch-percentages .yes-switch {
+    background: black;
+}
+
+.switch-percentages .play-switch h2 {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.switch-percentages .play-switch {
+    border: 1px solid #039f0d;
+    background: black;
+    z-index: 1;
+}
+
+.switch-percentages .play-switch>div {
+    padding: 18px 10px;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+}
+
+.switch-percentages .text-switch {
+    padding: 3.5px;
+    border: 1px solid var(--green);
+    font-size: 22px;
+    background: rgba(3, 159, 13, 0.2);
+}
+
+.switch-percentages .text-switch>div {
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--green);
+}
+
+.switch-percentages .no-switch .text-switch>div {
+    padding: 0.5rem 2rem 0.5rem 1.5rem;
+}
+
+.switch-percentages>div:first-child {
+    margin-right: 0.7rem;
+}
+
+.switch-percentages>div:last-child {
+    margin-left: 0.7rem;
+}
+
+.switch-percentages .no-switch .text-switch {
+    background: rgba(255, 0, 0, 0.38);
+    border-color: #f00;
+}
+
+.switch-percentages .no-switch .text-switch>div {
+    border-color: #f00;
+    color: var(--red);
+}
+
+.switch-percentages .no-switch .play-switch {
+    border-color: var(--red);
+}
+
+.switch-percentages .no-switch .play-switch>div {
+    border-color: var(--red);
+}
+
+.fill-go-for-vote {
+    clip-path: polygon(0% 0%, 51% 0, 100% 50%, 54% 100%, 0% 100%);
+    background: var(--primary);
+}
+
+.fill-go-for-vote h2 {
+    color: black;
 }
