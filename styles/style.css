@@ -1502,6 +1502,7 @@ body {
     width: 81%;
     right: -104px;
     top: -38px;
+    z-index: -1;
 }
 
 .overflow-hidden {
@@ -2015,7 +2016,15 @@ body {
 .switch-percentages .no-switch .play-switch>div {
     border-color: var(--red);
 }
+.go-for-vote:hover {
+    clip-path: polygon(0% 0%, 51% 0, 100% 50%, 54% 100%, 0% 100%);
+    background: var(--primary);
+    cursor: pointer;
+}
+.go-for-vote:hover h2 {
+    color: #fff;
 
+}
 .fill-go-for-vote {
     clip-path: polygon(0% 0%, 51% 0, 100% 50%, 54% 100%, 0% 100%);
     background: var(--primary);
@@ -2127,5 +2136,4 @@ body {
     transform: translateX(0px);
   }
 }
-
 
